@@ -1,0 +1,44 @@
+#grid{
+	margin: 20px;
+	.post{
+		float: left;
+		width: auto;
+		margin-right: 20px;
+		&.landscape{
+			max-width: 500px;
+		}
+		&.portrait{
+			max-width: 340px;
+		}
+		> .image{
+			img{
+				max-width: 100%;
+			}
+		}
+		h2{
+			font: 400 40px/40px Georgia;
+			letter-spacing: -1px;
+			.category{
+				display: inline-block;
+				font: 500 9px/18px $sans;
+				border: 1px solid #CCC;
+				color: #CCC;
+				margin-left: 10px;
+				padding: 0px 3px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				position: relative;
+				top: -16px;
+				border-bottom: 0px;
+				border-right: 0px;
+			}
+			a{
+				text-decoration: none;
+				color: $black;
+			}
+		}
+		.intro{
+			font: 400 12px/20px Arial;
+		}
+	}
+}
