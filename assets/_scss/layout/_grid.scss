@@ -1,44 +1,50 @@
 #grid{
-	margin: 20px;
+	margin: 80px;
 	.post{
 		float: left;
 		width: auto;
-		margin-right: 20px;
+		margin-right: 80px;
+		margin-bottom: 80px;
+		border-bottom: 6px solid #EEE;
+		padding-bottom: 20px;
+		position: relative;
 		&.landscape{
-			max-width: 500px;
+			max-width: 400px;
 		}
 		&.portrait{
-			max-width: 340px;
+			max-width: 240px;
 		}
 		> .image{
+			margin-bottom: 20px;
 			img{
 				max-width: 100%;
 			}
 		}
+		h4.date{
+			font: 400 14px/21px $sans;;
+			margin-bottom: 0px;
+			color: #CCC;
+		}
 		h2{
-			font: 400 40px/40px Georgia;
-			letter-spacing: -1px;
-			.category{
-				display: inline-block;
-				font: 500 9px/18px $sans;
-				border: 1px solid #CCC;
-				color: #CCC;
-				margin-left: 10px;
-				padding: 0px 3px;
-				letter-spacing: 2px;
-				text-transform: uppercase;
-				position: relative;
-				top: -16px;
-				border-bottom: 0px;
-				border-right: 0px;
-			}
+			font: bold 14px/21px $sans;;
+			margin-bottom: 0px;
 			a{
 				text-decoration: none;
 				color: $black;
 			}
 		}
 		.intro{
-			font: 400 12px/20px Arial;
+			font: 400 15px/21px 'Times New Roman';
+		}
+		.type{
+			position: absolute;
+			padding: 0px 6px;
+			height: 40px;
+			right: -20px;
+			top: -20px;
+			color: #FF3300;
+			font: 400 30px/30px $sans;
+			background-color: #FFF;
 		}
 	}
 }
