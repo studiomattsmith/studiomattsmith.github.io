@@ -10,7 +10,7 @@ orientation: portrait
 
 # Peoples Coffee
 
-Design & build. Expansion and refit of an established coffee shop. 
+Design & build. [Expansion](otto:google.com) and refit of an established coffee shop. 
 
 ![](/assets/images/peoples/newstore1.jpg)
 
