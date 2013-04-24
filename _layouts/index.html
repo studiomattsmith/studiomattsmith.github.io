@@ -20,8 +20,10 @@
                             <a href="{{ post.url }}"><img src="{{ post.image }}" /></a>
                         </div>
                     {% endif %}
-                    <h2><a href="{{ post.url }}">{{ post.title }}</a><span class="category">{{ post.category }}</span></h2>
+                    <h4 class="date">{{ post.date | date: "%d %B %Y" }}</h4>
+                    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                     <p class="intro">{{ post.intro }}</p>
+                    
                 </div>
             {% endfor %}
         </div>
