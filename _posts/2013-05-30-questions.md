@@ -3,7 +3,7 @@ layout: project
 intro: People we meet along the way.   
 image: /assets/images/questions/Karie.jpg
 title: COMMON People
-category: COMMON People
+category: People
 tags: COMMON, NewYorkCOMMON, questions
 orientation: landscape
 ---
