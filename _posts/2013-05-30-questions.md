@@ -2,13 +2,13 @@
 layout: project
 intro: People we meet along the way.   
 image: /assets/images/questions/Karie.jpg
-title: COMMON People
+title: COMMON People / New York
 category: People
-tags: COMMON, NewYorkCOMMON, questions
+tags: COMMON, New York, questions
 orientation: landscape
 ---
 
-# COMMON People
+# COMMON People / New York
 
 We meet some interesting people during work and travel, these are some we met in New York, and their answers to COMMON Questions.  
 
