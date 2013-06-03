@@ -8,9 +8,9 @@ tags: New York,
 orientation: portrait
 ---
 
-# Glass House / New York
+# The Philip Johnson Glass House
 
-An hour and a half north of New York City, in Connecticut, is Philip Johnson's Glass House. 
+An hour and a half north of New York City, in Connecticut, is Philip Johnson's Glass House, a 47 acre plot with 13 other modernist strcutures. 
 
 ![](/assets/images/glass/GH1.jpg)
 
