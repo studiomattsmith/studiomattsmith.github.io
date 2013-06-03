@@ -1,6 +1,6 @@
 ---
 layout: project
-intro: People we meet along the way.   
+intro: A trip to Johnson's 47 acre plot, The Glass House and 13 other modernist strcutures.    
 image: /assets/images/glass/GH14.jpg
 title: The Philip Johnson Glass House
 category: Travel
