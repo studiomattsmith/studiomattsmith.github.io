@@ -25,7 +25,5 @@ In collaboration with Caspian Ievers and Hugo Mathias.
 
 ![](/assets/images/6bsbrand/6bs6.jpg)
 
-![](/assets/images/6bsbrand/6bs7.jpg)
-
 Images borrowed from the Six Barrel Soda Co. tumblr. 
 All photographs by Megan Dieudonne
