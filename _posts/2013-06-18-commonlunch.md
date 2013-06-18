@@ -12,4 +12,5 @@ orientation: landscape
 
 
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/-yrh6mp-Ul0" frameborder="0" allowfullscreen></iframe>
+<embed width="560" height="315" src="http://www.youtube.com/embed/-yrh6mp-Ul0" frameborder="0" allowfullscreen type="application/x-shockwave-flash">
+</embed>
