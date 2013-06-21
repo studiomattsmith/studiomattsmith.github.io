@@ -1,40 +1,70 @@
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == tablet {
+    @media (min-width: 768px) and (max-width: 1023px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (min-width: 0px) and (max-width: 767px)  { @content; }
+  }
+}
+
 #grid{
-	margin: 80px;
+	margin: 20px;
 	.post{
 		float: left;
 		width: auto;
-		margin-right: 80px;
-		margin-bottom: 80px;
-		border-bottom: 6px solid #EEE;
-		padding-bottom: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
 		position: relative;
+		background-color: #F8F8F8;
+		display: block;
+		text-decoration: none;
 		&.landscape{
-			max-width: 400px;
+			width: 620px;
+			height: 620px;
 		}
 		&.portrait{
-			max-width: 240px;
+			width: 460px;
+			height: 460px;
+
 		}
 		> .image{
-			margin-bottom: 20px;
+			$margin: 60px;
+			position: absolute;
+			left: $margin;
+			top: $margin;
+			bottom: $margin;
+			right: $margin;
+			text-align: center;
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
 			img{
-				max-width: 100%;
+				display: none;
 			}
 		}
-		h4.date{
-			font: 400 14px/21px $sans;;
-			margin-bottom: 0px;
-			color: #CCC;
-		}
 		h2{
-			font: bold 14px/21px $sans;;
+			font: 600 14px/14px $sans;
+			color: $black;
 			margin-bottom: 0px;
+			position: absolute;
+			left: 20px;
+			top: 20px;
 			a{
 				text-decoration: none;
 				color: $black;
 			}
 		}
 		.intro{
-			font: 400 15px/21px 'Times New Roman';
+			font: 400 14px/18px $sans;
+			color: $black;
+			position: absolute;
+			left: 20px;
+			bottom: 16px;
+			margin: 0px;
+			@include opacity(.5);
 		}
 		.type{
 			position: absolute;
@@ -45,6 +75,38 @@
 			color: #FF3300;
 			font: 400 30px/30px $sans;
 			background-color: #FFF;
+		}
+		@include breakpoint(tablet){
+			width: 320px !important;
+			height: 320px !important;
+		}
+		@include breakpoint(mobile){
+			width: auto !important;
+			height: auto !important;
+			float: none;
+			background-color: transparent;
+			margin-bottom: 80px;
+			margin-right: 0px;
+			h2,
+			.intro{
+				position: relative;
+				left: auto;
+				top: auto;
+				bottom: auto;
+				margin-top: 10px;
+			}
+			.image{
+				background-image: none !important;
+				position: relative;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				img{
+					display: block;
+					max-width: 100%;
+				}
+			}
 		}
 	}
 }

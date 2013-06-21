@@ -4,8 +4,8 @@ intro: Branding for a new soda syrup company.
 image: /assets/images/6bsbrand/6bs1.jpg
 title: Six Barrel Soda Co. BRANDING
 category: services
-tags: branding, collaboration
-orientation: landscape
+tags: [branding, collaboration]
+orientation: portrait
 ---
 
 # Six Barrel Soda Co. BRANDING

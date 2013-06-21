@@ -4,7 +4,7 @@ intro: People we meet along the way.
 image: /assets/images/questions/Karie.jpg
 title: COMMON People / New York
 category: People
-tags: COMMON, New York, questions
+tags: [COMMON, New York, questions]
 orientation: portrait
 ---
 

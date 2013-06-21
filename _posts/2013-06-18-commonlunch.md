@@ -4,7 +4,7 @@ intro: COMMON Lunch
 image: /assets/images/6bsbrand/6bs1.jpg
 title: COMMON Lunch
 category: services
-tags: branding, collaboration
+tags: [branding, collaboration]
 orientation: landscape
 ---
 

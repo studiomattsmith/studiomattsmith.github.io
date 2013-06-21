@@ -1,0 +1,12 @@
+#project{
+	margin: 20px;
+	font-family: $sans;
+	img{
+		max-width: 100%;
+	}
+	p + p{
+		text-indent: 0px;
+		margin-bottom: 20px;
+		margin-top: 0px;
+	}
+}

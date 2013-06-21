@@ -4,7 +4,7 @@ intro: Wine ice bucket design for Kim Crawford Wines
 image: /assets/images/kc/KimCrawford.jpg
 title: Kim Crawford
 category: services
-tags: fitout, branding, COMMON, collaboration
+tags: [fitout, branding, COMMON, collaboration]
 orientation: landscape
 ---
 
