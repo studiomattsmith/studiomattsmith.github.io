@@ -1,12 +1,46 @@
 #project{
+	font-family: $serif;
 	margin: 20px;
-	font-family: $sans;
+	p,
+	h1,
+	.image{
+		margin: 0px 20px 20px 0px;
+		width: 300px;
+	}
 	img{
 		max-width: 100%;
 	}
+	p{
+		width: 300px;
+		float: left;
+		font: 400 18px/24px $serif;
+	}
 	p + p{
 		text-indent: 0px;
-		margin-bottom: 20px;
-		margin-top: 0px;
+		margin: 0px 20px 20px 0px;
+	}
+	h1{
+		font: 900 40px/40px $sans;
+		font-style: italic;
+		transform:rotate(-5deg);
+		-ms-transform:rotate(-5deg); /* IE 9 */
+		-webkit-transform:rotate(-5deg); /* Safari and Chrome */
+		letter-spacing: -1px;
+		float: left;
+	}
+	.image{
+		float: left;
+		img{
+			width: 100%;
+		}
+		&.col_2{
+			width: 300px;
+		}
+		&.col_3{
+			width: 460px;
+		}
+		&.col_4{
+			width: 620px;
+		}
 	}
 }

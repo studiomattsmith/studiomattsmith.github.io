@@ -13,17 +13,24 @@ orientation: portrait
 Branding for a new handmade soda syrup company, Six Barrel Soda Co. 
 In collaboration with Caspian Ievers and Hugo Mathias. 
 
-![](/assets/images/6bsbrand/6bs1.jpg)
-
-![](/assets/images/6bsbrand/6bs2.jpg)
-
-![](/assets/images/6bsbrand/6bs3.jpg)
-
-![](/assets/images/6bsbrand/6bs4.jpg)
-
-![](/assets/images/6bsbrand/6bs5.jpg)
-
-![](/assets/images/6bsbrand/6bs6.jpg)
+<div class="image">
+	<img src="/assets/images/6bsbrand/6bs1.jpg" />
+</div>
+<div class="image">
+	<img src="/assets/images/6bsbrand/6bs2.jpg" />
+</div>
+<div class="image">
+	<img src="/assets/images/6bsbrand/6bs3.jpg" />
+</div>
+<div class="image">
+	<img src="/assets/images/6bsbrand/6bs4.jpg" />
+</div>
+<div class="image">
+	<img src="/assets/images/6bsbrand/6bs5.jpg" />
+</div>
+<div class="image">
+	<img src="/assets/images/6bsbrand/6bs6.jpg" />
+</div>
 
 Images borrowed from the Six Barrel Soda Co. tumblr. 
 All photographs by Megan Dieudonne

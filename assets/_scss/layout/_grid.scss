@@ -12,15 +12,15 @@
 
 #grid{
 	margin: 20px;
-	text-align: center;
 	.post{
-// 		float: left;
+		float: left;
 		display: inline-block;
 		width: auto;
 		margin-right: 20px;
 		margin-bottom: 20px;
 		position: relative;
 		background-color: #F8F8F8;
+// 		border: 6px solid #FFF;
 		text-decoration: none;
 		&.landscape{
 			width: 620px;
@@ -47,25 +47,33 @@
 			}
 		}
 		h2{
-			font: 600 14px/14px $sans;
+			font: 600 30px/30px $sans;
+			letter-spacing: -1px;
 			color: $black;
 			margin-bottom: 0px;
 			position: absolute;
 			left: 20px;
 			top: 20px;
+			display: inline-block;
+			border-bottom: 2px solid $black;
+			transform:rotate(-3deg);
+			-ms-transform:rotate(-3deg); /* IE 9 */
+			-webkit-transform:rotate(-3deg); /* Safari and Chrome */
+			font-style: italic;
 			a{
 				text-decoration: none;
 				color: $black;
 			}
 		}
 		.intro{
-			font: 400 14px/18px $sans;
+			font: 400 16px/20px $serif;
 			color: $black;
 			position: absolute;
-			left: 20px;
+			max-width: 400px;
+			right: 20px;
 			bottom: 16px;
 			margin: 0px;
-			@include opacity(.5);
+			text-align: right;
 		}
 		.type{
 			position: absolute;
@@ -107,6 +115,14 @@
 					display: block;
 					max-width: 100%;
 				}
+			}
+		}
+		&:hover{
+			border-color: $black;
+			background-color: $black;
+			h2,
+			.intro{
+				color: #FFF;
 			}
 		}
 	}
