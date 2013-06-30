@@ -1,0 +1,29 @@
+#nav{
+	text-align: center;
+	margin: 40px 0px;
+	.links{
+		margin: 10px 0px;
+		font: 400 13px/18px $sans;
+		text-transform: capitalize;
+		.divider{
+			color: #EEE;
+		}
+		a{
+			color: #CCC;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	&:hover{
+		.links{
+			a{
+				color: $black;
+			}
+			.divider{
+				color: #CCC;
+			}
+		}
+	}
+}

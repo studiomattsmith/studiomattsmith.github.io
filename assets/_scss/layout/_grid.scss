@@ -12,14 +12,15 @@
 
 #grid{
 	margin: 20px;
+	text-align: center;
 	.post{
-		float: left;
+// 		float: left;
+		display: inline-block;
 		width: auto;
 		margin-right: 20px;
 		margin-bottom: 20px;
 		position: relative;
 		background-color: #F8F8F8;
-		display: block;
 		text-decoration: none;
 		&.landscape{
 			width: 620px;
