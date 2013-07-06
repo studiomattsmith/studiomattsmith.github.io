@@ -3,7 +3,7 @@ layout: project
 intro: A trip to Johnson's 47 acre plot, The Glass House and 13 other modernist strcutures.    
 image: /assets/images/glass/GH14.jpg
 title: The Philip Johnson Glass House
-category: Travel
+category: travel
 tags: [New York]
 orientation: landscape
 ---

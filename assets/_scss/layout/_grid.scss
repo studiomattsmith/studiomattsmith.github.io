@@ -10,119 +10,162 @@
   }
 }
 
-#grid{
-	margin: 20px;
-	.post{
-		float: left;
-		display: inline-block;
-		width: auto;
-		margin-right: 20px;
-		margin-bottom: 20px;
-		position: relative;
-		background-color: #F8F8F8;
-// 		border: 6px solid #FFF;
-		text-decoration: none;
-		&.landscape{
-			width: 620px;
-			height: 620px;
-		}
-		&.portrait{
-			width: 460px;
-			height: 460px;
+.clearfix{
+	clear: both;
+}
 
+#grid{
+	position: absolute;
+	left: 20%;
+	top: 0px;
+	right: 0px;
+	.column{
+		width: 50%;
+		float: left;
+		@include breakpoint(tablet){
+			width: 100%;
 		}
-		> .image{
-			$margin: 60px;
+	}
+	.post{
+		width: 100%;
+		overflow: visible;
+		position: relative;
+		display: block;
+		text-decoration: none;
+		color: $black;
+		.border{
 			position: absolute;
-			left: $margin;
-			top: $margin;
-			bottom: $margin;
-			right: $margin;
-			text-align: center;
-			background-size: contain;
-			background-position: center center;
-			background-repeat: no-repeat;
+			left: 0px;
+			right: 0px;
+			bottom: -2px;
+			height: 4px;
+			background-color: rgba(0, 0, 0, .1);
+			z-index: 100;
+			display: none;
+		}
+		.image{
+			position: relative;
+			z-index: 2;
 			img{
-				display: none;
+				display: block;
+				width: 100%;
+				@include box-sizing(border-box);
 			}
 		}
 		h2{
-			font: 600 30px/30px $sans;
+			font: 700 30px/30px $sans;
+			text-transform: uppercase;
 			letter-spacing: -1px;
 			color: $black;
-			margin-bottom: 0px;
-			position: absolute;
-			left: 20px;
-			top: 20px;
-			display: inline-block;
-			border-bottom: 2px solid $black;
-			transform:rotate(-3deg);
-			-ms-transform:rotate(-3deg); /* IE 9 */
-			-webkit-transform:rotate(-3deg); /* Safari and Chrome */
-			font-style: italic;
-			a{
-				text-decoration: none;
-				color: $black;
-			}
+			text-align: center;
+			padding: 20px;
+			@include box-sizing(border-box);
 		}
 		.intro{
-			font: 400 16px/20px $serif;
-			color: $black;
-			position: absolute;
-			max-width: 400px;
-			right: 20px;
-			bottom: 16px;
-			margin: 0px;
-			text-align: right;
-		}
-		.type{
-			position: absolute;
-			padding: 0px 6px;
-			height: 40px;
-			right: -20px;
-			top: -20px;
-			color: #FF3300;
-			font: 400 30px/30px $sans;
-			background-color: #FFF;
-		}
-		@include breakpoint(tablet){
-			width: 320px !important;
-			height: 320px !important;
-		}
-		@include breakpoint(mobile){
-			width: auto !important;
-			height: auto !important;
-			float: none;
-			background-color: transparent;
-			margin-bottom: 80px;
-			margin-right: 0px;
-			h2,
-			.intro{
-				position: relative;
-				left: auto;
-				top: auto;
-				bottom: auto;
-				margin-top: 10px;
+			p{
+				@include box-sizing(border-box);
+				text-align: center;
+				padding: 20px 40px;
+				font: 500 16px/21px 'Helvetica Neue', Sans-Serif;
 			}
+		}
+		&.landscape{
+			padding-bottom: 20px;
+			img{
+				width: 100%;
+			}
+			.intro{
+				h2{
+					width: 50%;
+					float: left;
+					padding: 20px;
+					@include box-sizing(border-box);
+				}
+				p{
+					float: left;
+					width: 50%;
+				}
+			}
+		}
+		&.portrait{
 			.image{
-				background-image: none !important;
-				position: relative;
-				left: 0px;
-				top: 0px;
+				width: 50%;
+			}
+			.intro{
+				position: absolute;
 				right: 0px;
+				top: 0px;
 				bottom: 0px;
-				img{
-					display: block;
-					max-width: 100%;
+				width: 50%;
+				padding-bottom: 120px;
+				.left &{
+					left: 0px;
+					right: auto;
+				}
+				h2{
+					margin-top: 40px;
+				}
+				p{
+					padding: 0px 40px 20px 40px;
+					position: absolute;
+					bottom: 40px;
+					left: 0px;
+					right: 0px;
 				}
 			}
 		}
 		&:hover{
-			border-color: $black;
-			background-color: $black;
-			h2,
+			.image{
+				@include opacity(0);
+			}
+			p{
+				@include opacity(0);
+			}
+		}
+	}
+	.left{
+		.post.portrait{
+			.image{
+				margin-left: 50%;
+			}
 			.intro{
-				color: #FFF;
+				right: auto;
+				left: 0px;
+			}
+		}
+	}
+	.filler{
+		.cell{
+			width: 50%;
+			@include box-sizing(border-box);
+			border-right: 1px solid #EEE;	
+			float: left;
+			.instagram{
+				position: relative;
+				display: block;
+				img{
+					width: 100%;
+					display: block;
+					@include box-sizing(border-box);
+					padding: 80px;
+				}
+				p{
+					display: none;
+					position: absolute;
+					left: 40px;
+					top: 40px;
+					margin: 0px;
+					right: 40px;
+					font: 400 14px/20px 'Helvetica Neue', Sans-Serif;
+				}
+				&:hover{
+					img{
+						@include opacity(0);
+					}
+					p{
+						display: block;
+					}
+				}
 			}
 		}
 	}

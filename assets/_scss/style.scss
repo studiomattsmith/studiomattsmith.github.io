@@ -1,14 +1,13 @@
 @import 'helpers/_normalize';
 @import 'helpers/_typeplate';
 
-$sans: "nimbus-sans", "Helvetica Neue", Sans-Serif;
-$serif: "abril-text", Serif;
+$sans: "brandon-grotesque", "Helvetica Neue", Sans-Serif;
+$serif: Georgia, Serif;
 
 $black: #111;
 
 
 #nav{
-	margin: 20px;
 	font: 400 13px/20px $serif;
 	letter-spacing: 1px;
 }

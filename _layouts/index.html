@@ -10,12 +10,27 @@
         <meta name="description" content="">
         {% include head.html %}
     </head>
-    <body id="index">
+    <body id="index" class="js-extend-view" data-view="index">
         {% include nav.html %}
         <div id="grid" class="posts">
-            {% for post in site.posts %}
-                {% include post-thumb.html %}
-            {% endfor %}
+            <div class="left column">
+                {% for post in site.posts %}
+                    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+                    {% if thecycle == 'odd' %}
+                        {% include post-thumb.html %}
+                        {% include filler-thumb.html %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="column">
+                {% for post in site.posts %}
+                    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+                    {% if thecycle == 'even' %}
+                        {% include filler-thumb.html %}
+                        {% include post-thumb.html %}
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         {% include js.html %}
     </body>
