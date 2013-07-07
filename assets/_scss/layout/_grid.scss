@@ -19,10 +19,22 @@
 	left: 20%;
 	top: 0px;
 	right: 0px;
+	@include breakpoint(mobile){
+		position: relative;
+		left: auto;
+		top: auto;
+		right: auto;
+	}
+	@include breakpoint(tablet){
+		position: relative;
+		left: auto;
+		top: auto;
+		right: auto;
+	}
 	.column{
 		width: 50%;
 		float: left;
-		@include breakpoint(tablet){
+		@include breakpoint(mobile){
 			width: 100%;
 		}
 	}
@@ -60,6 +72,14 @@
 			text-align: center;
 			padding: 20px;
 			@include box-sizing(border-box);
+			@include breakpoint(mobile){
+				font: 700 20px/20px $sans;
+				letter-spacing: 0px;
+			}
+			@include breakpoint(tablet){
+				font: 700 24px/24px $sans;
+				letter-spacing: 0px;
+			}
 		}
 		.intro{
 			p{
@@ -67,6 +87,14 @@
 				text-align: center;
 				padding: 20px 40px;
 				font: 500 16px/21px 'Helvetica Neue', Sans-Serif;
+				@include breakpoint(mobile){
+					font: 400 13px/18px 'Helvetica Neue', Sans-Serif;
+					padding: 20px;
+				}
+				@include breakpoint(tablet){
+					font: 400 14px/20px 'Helvetica Neue', Sans-Serif;
+					padding: 20px;
+				}
 			}
 		}
 		&.landscape{
@@ -112,14 +140,42 @@
 					left: 0px;
 					right: 0px;
 				}
+				@include breakpoint(mobile){
+					h2{
+						margin-top: 20px;
+					}
+					p{
+						padding: 20px;
+						position: relative;
+						bottom: auto;
+						left: auto;
+						right: auto;
+					}
+				}
+				@include breakpoint(tablet){
+					h2{
+						margin-top: 20px;
+					}
+					p{
+						padding: 20px;
+						position: relative;
+						bottom: auto;
+						left: auto;
+						right: auto;
+					}
+				}
 			}
 		}
-		&:hover{
-			.image{
-				@include opacity(0);
-			}
-			p{
-				@include opacity(0);
+		@include breakpoint(desktop){
+			&:hover{
+				background-color: $black;
+				.image{
+					@include opacity(.2);
+				}
+				p,
+				h2{
+					color: #FFF;
+				}
 			}
 		}
 	}
@@ -135,14 +191,33 @@
 		}
 	}
 	.filler{
+		position: relative;
+		@include breakpoint(mobile){
+			display: none;
+		}
 		.cell{
 			width: 50%;
 			@include box-sizing(border-box);
-			float: left;
+			position: relative;
+			&.tumblr{
+				position: absolute;
+				right: 0px;
+				bottom: 0px;
+				width: 50%;
+				top: 0px;
+				p{
+					margin: 20px;
+					font: 400 14px/20px 'Helvetica Neue', Sans-Serif;
+					color: #CCC;
+				}
+			}
 			.instagram{
 				position: relative;
 				display: block;
+				width: 50%;
+				float: left;
 				img{
+					@include opacity(.3);
 					width: 100%;
 					display: block;
 					@include box-sizing(border-box);
@@ -151,19 +226,11 @@
 				p{
 					display: none;
 					position: absolute;
-					left: 40px;
-					top: 40px;
+					left: 10px;
+					top: 10px;
 					margin: 0px;
 					right: 40px;
-					font: 400 14px/20px 'Helvetica Neue', Sans-Serif;
-				}
-				&:hover{
-					img{
-						@include opacity(0);
-					}
-					p{
-						display: block;
-					}
+					font: 400 13px/15px 'Helvetica Neue', Sans-Serif;
 				}
 			}
 		}

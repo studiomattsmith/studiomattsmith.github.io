@@ -6,28 +6,53 @@
     return IndexView = Backbone.View.extend({
       initialize: function() {
         _.bindAll(this);
-        return this.getInstagram();
+        this.getInstagram();
+        return this.getTumblr();
       },
       getInstagram: function() {
         $.ajax({
           type: 'GET',
           dataType: 'jsonp',
-          url: "https://api.instagram.com/v1/users/20755768/media/recent/?access_token=20755768.06f8ba8.b52717186035436bac737b48cada2829&count=50",
+          url: "https://api.instagram.com/v1/users/14250732/media/recent/?access_token=16304963.457f60c.d89e49ea943c44e29308004e99a9d8da&count=100",
           success: this.haveInstagramData
         });
       },
-      instagramTemplate: _.template("<div class=\"instagram\">\n	<img src=\"<%= images.standard_resolution.url %>\" />\n	<% if(caption){ %>\n		<p><%= caption.text %></p>\n	<% } %>\n</div>"),
+      instagramTemplate: _.template("<img src=\"<%= images.standard_resolution.url %>\" />\n<% if(caption){ %>\n	<p><%= caption.text %></p>\n<% } %>"),
       haveInstagramData: function(data) {
         var _this = this;
 
-        console.log('data', data);
-        return _.each(this.$('.cell'), function(el, index) {
+        return _.each(this.$('.instagram'), function(el, index) {
           var $el, gram;
 
           $el = $(el);
           gram = data.data[index];
-          console.log(gram);
-          return $el.append(_this.instagramTemplate(gram));
+          if (gram != null) {
+            return $el.append(_this.instagramTemplate(gram));
+          }
+        });
+      },
+      getTumblr: function() {
+        return $.ajax({
+          url: 'http://api.tumblr.com/v2/blog/commonthings.tumblr.com/posts',
+          dataType: 'jsonp',
+          type: 'GET',
+          data: {
+            api_key: "YgpsEXCrpCtKL9U7aNBzWeDp0sSbZw1AeZQSt5QgsXRLdb5o24",
+            limit: 20,
+            offset: 0
+          },
+          success: this.haveTumblrData
+        });
+      },
+      haveTumblrData: function(data) {
+        var _this = this;
+
+        return _.each(this.$('.tumblr'), function(el, index) {
+          var $el, post;
+
+          $el = $(el);
+          post = data.response.posts[index];
+          return console.log(post);
         });
       }
     });

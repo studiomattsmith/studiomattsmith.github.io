@@ -9,32 +9,44 @@ define [
 		initialize: ->
 			_.bindAll @
 			@getInstagram()
+			@getTumblr()
 
 		getInstagram: ->
 			$.ajax
 				type: 'GET'
 				dataType: 'jsonp'
-				url: "https://api.instagram.com/v1/users/20755768/media/recent/?access_token=20755768.06f8ba8.b52717186035436bac737b48cada2829&count=50"
+				url: "https://api.instagram.com/v1/users/14250732/media/recent/?access_token=16304963.457f60c.d89e49ea943c44e29308004e99a9d8da&count=100"
 				success: @haveInstagramData
 			return
 
 		instagramTemplate: _.template """
-			<div class="instagram">
-				<img src="<%= images.standard_resolution.url %>" />
-				<% if(caption){ %>
-					<p><%= caption.text %></p>
-				<% } %>
-			</div>
+			<img src="<%= images.standard_resolution.url %>" />
+			<% if(caption){ %>
+				<p><%= caption.text %></p>
+			<% } %>
 			"""
 
 		haveInstagramData: (data) ->
-			console.log 'data', data
-			_.each @$('.cell'), (el, index) =>
+			_.each @$('.instagram'), (el, index) =>
 				$el = $(el)
 				gram = data.data[index]
-				console.log gram
-				$el.append @instagramTemplate gram
-			# _.each data.data, (item) =>
-				# console.log item
-				# src = item.images.standard_resolution.url
-				# $("#grid").append @instagramTemplate item
+				if gram?
+					$el.append @instagramTemplate gram
+
+		getTumblr: ->
+			$.ajax
+				url: 'http://api.tumblr.com/v2/blog/commonthings.tumblr.com/posts'
+				dataType: 'jsonp'
+				type: 'GET'
+				data:
+					api_key: "YgpsEXCrpCtKL9U7aNBzWeDp0sSbZw1AeZQSt5QgsXRLdb5o24"
+					limit: 20
+					offset: 0
+				success: @haveTumblrData
+
+		haveTumblrData: (data) ->
+			# console.log 'haveTumblrData', data
+			_.each @$('.tumblr'), (el, index) =>
+				$el = $(el)
+				post = data.response.posts[index]
+				console.log post

@@ -1,23 +1,39 @@
 #project{
+	position: absolute;
+	left: 20%;
+	top: 0px;
+	right: 0px;
+	@include breakpoint(mobile){
+		position: relative;
+		left: auto;
+		top: auto;
+		right: auto;
+	}
+	@include breakpoint(tablet){
+		position: relative;
+		left: auto;
+		top: auto;
+		right: auto;
+	}
 	font-family: $serif;
-	margin: 20px;
 	p,
 	h1,
 	.image{
-		margin: 0px 20px 20px 0px;
-		width: 300px;
+		float: left;
+		padding: 0px 1px 1px 0px;
+		width: 25%;
+		@include box-sizing(border-box);
 	}
 	img{
 		max-width: 100%;
+		display: block;
 	}
 	p{
-		width: 300px;
-		float: left;
 		font: 400 18px/24px $serif;
+		padding: 20px;
 	}
 	p + p{
 		text-indent: 0px;
-		margin: 0px 20px 20px 0px;
 	}
 	h1{
 		font: 900 40px/40px $sans;
@@ -26,7 +42,6 @@
 		-ms-transform:rotate(-5deg); /* IE 9 */
 		-webkit-transform:rotate(-5deg); /* Safari and Chrome */
 		letter-spacing: -1px;
-		float: left;
 	}
 	.image{
 		float: left;
@@ -34,13 +49,13 @@
 			width: 100%;
 		}
 		&.col_2{
-			width: 300px;
+			width: 50%;
 		}
 		&.col_3{
-			width: 460px;
+			width: 75%;
 		}
 		&.col_4{
-			width: 620px;
+			width: 100%;
 		}
 	}
 }

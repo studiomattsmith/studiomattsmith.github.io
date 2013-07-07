@@ -4,7 +4,7 @@ root_dir = File.expand_path('..', dir); #path to parent
 # require File.join(dir, '/lib', 'custom_extensions.rb')
 
 # environment
-environment = :production # :production
+environment = :development # :production
 
 # Set this to the root of your project when deployed:
 http_path = "/assets/"

@@ -6,14 +6,35 @@
 	width: 20%;
 	z-index: 100;
 	text-align: center;
-	background-color: #EEE;
+	background-color: $black;
+	@include breakpoint(mobile){
+		position: relative;
+		left: auto;
+		top: auto;
+		bottom: auto;
+		width: 100%;
+	}
+	@include breakpoint(tablet){
+		position: relative;
+		left: auto;
+		top: auto;
+		bottom: auto;
+		width: 100%;
+	}
 	#logo{
-		@include inline-block;
-		margin: 60px 0px;
+		display: block;
+		max-width: 400px;
+		@include center-block;
+		padding: 60px 30px;
+		@include box-sizing(border-box);
 		img{
-			display: block;
-			max-width: 260px;
-			@include center-block;
+			width: 100%;
+		}
+		@include breakpoint(tablet){
+			padding-bottom: 20px;
+		}
+		@include breakpoint(mobile){
+			padding-bottom: 20px;
 		}
 	}
 	ul{
@@ -23,12 +44,15 @@
 		margin: 0px;
 		padding: 0px;
 		margin-top: 0px;
+		@include breakpoint(mobile){
+			padding-bottom: 20px;
+		}
 		li{
 			list-style-type: none;
-			margin-bottom: 20px;
+			padding-bottom: 20px;
 			a{
 				text-decoration: none;
-				color: $black;
+				color: #FFF;
 				&:hover{
 					text-decoration: underline;
 				}
