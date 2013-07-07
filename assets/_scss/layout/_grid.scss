@@ -168,13 +168,13 @@
 		}
 		@include breakpoint(desktop){
 			&:hover{
-				background-color: $black;
+				background-color: #FFF;
 				.image{
-					@include opacity(.2);
+// 					@include opacity(.2);
 				}
 				p,
 				h2{
-					color: #FFF;
+// 					color: #FFF;
 				}
 			}
 		}
@@ -205,10 +205,11 @@
 				bottom: 0px;
 				width: 50%;
 				top: 0px;
+				background-color: rgb(44, 71, 98);
 				p{
 					margin: 20px;
 					font: 400 14px/20px 'Helvetica Neue', Sans-Serif;
-					color: #CCC;
+					color: rgba(0, 0, 0, .2);
 				}
 			}
 			.instagram{
@@ -217,7 +218,7 @@
 				width: 50%;
 				float: left;
 				img{
-					@include opacity(.3);
+// 					@include opacity(.3);
 					width: 100%;
 					display: block;
 					@include box-sizing(border-box);

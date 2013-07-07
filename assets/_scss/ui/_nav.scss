@@ -23,9 +23,9 @@
 	}
 	#logo{
 		display: block;
-		max-width: 400px;
+		max-width: 500px;
 		@include center-block;
-		padding: 60px 30px;
+		padding: 60px;
 		@include box-sizing(border-box);
 		img{
 			width: 100%;
