@@ -24,8 +24,8 @@
             </div>
             <div class="column">
                 {% for post in site.posts %}
-                    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-                    {% if thecycle == 'even' %}
+                    {% capture thecycle %}{% cycle 'even', 'odd' %}{% endcapture %}
+                    {% if thecycle == 'odd' %}
                         {% include filler-thumb.html %}
                         {% include post-thumb.html %}
                     {% endif %}
