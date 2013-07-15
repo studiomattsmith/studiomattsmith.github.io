@@ -1,13 +1,15 @@
-<a class="post{% for tag in post.tags %} {{ tag }}{% endfor %} {{ post.orientation }} {{ post.categories }}" href="{{ post.url }}">
-    {% if post.image %}
-        <div class="image">
-            <img src="{{ post.image }}" />
+{% if post.layout == project %}
+    <a class="post{% for tag in post.tags %} {{ tag }}{% endfor %} {{ post.orientation }} {{ post.categories }}" href="{{ post.url }}">
+        {% if post.image %}
+            <div class="image">
+                <img src="{{ post.image }}" />
+            </div>
+        {% endif %}
+        <div class="intro">
+    	    <h2>{{ post.title }}</h2>
+    	    <p class="excerpt">{{ post.intro }}</p>
+    	    <div class="clearfix"></div>
         </div>
-    {% endif %}
-    <div class="intro">
-	    <h2>{{ post.title }}</h2>
-	    <p class="excerpt">{{ post.intro }}</p>
-	    <div class="clearfix"></div>
-    </div>
-    <div class="border"></div>
-</a>
+        <div class="border"></div>
+    </a>
+{% endif %}
