@@ -2419,9 +2419,8 @@ h6 {
 }
 /* line 40, ../_scss/ui/_nav.scss */
 #nav ul {
-  font: 500 16px/21px 'Helvetica Neue', Sans-Serif;
+  font: 700 30px/31px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
   text-transform: uppercase;
-  letter-spacing: 5px;
   margin: 0px;
   padding: 0px;
   margin-top: 0px;
@@ -2432,17 +2431,19 @@ h6 {
     padding-bottom: 20px;
   }
 }
-/* line 50, ../_scss/ui/_nav.scss */
+/* line 49, ../_scss/ui/_nav.scss */
 #nav ul li {
   list-style-type: none;
   padding-bottom: 20px;
 }
-/* line 53, ../_scss/ui/_nav.scss */
+/* line 52, ../_scss/ui/_nav.scss */
 #nav ul li a {
+  position: relative;
+  left: -10px;
   text-decoration: none;
   color: #FFF;
 }
-/* line 56, ../_scss/ui/_nav.scss */
+/* line 57, ../_scss/ui/_nav.scss */
 #nav ul li a .key {
   display: -moz-inline-stack;
   display: inline-block;
@@ -2456,10 +2457,31 @@ h6 {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
   margin-right: 10px;
+  position: relative;
+  top: 3px;
 }
-/* line 63, ../_scss/ui/_nav.scss */
+/* line 66, ../_scss/ui/_nav.scss */
 #nav ul li a:hover {
   text-decoration: underline;
+}
+/* line 72, ../_scss/ui/_nav.scss */
+#nav #bookface {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 72, ../_scss/ui/_nav.scss */
+  #nav #bookface {
+    right: auto;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  /* line 72, ../_scss/ui/_nav.scss */
+  #nav #bookface {
+    display: none;
+  }
 }
 
 /* line 1, ../_scss/page-specific/_project.scss */
@@ -2468,7 +2490,7 @@ h6 {
   left: 20%;
   top: 0px;
   right: 0px;
-  font-family: Georgia, Serif;
+  margin: 46px 40px;
 }
 @media (min-width: 0px) and (max-width: 767px) {
   /* line 1, ../_scss/page-specific/_project.scss */
@@ -2477,6 +2499,7 @@ h6 {
     left: auto;
     top: auto;
     right: auto;
+    margin: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -2486,61 +2509,56 @@ h6 {
     left: auto;
     top: auto;
     right: auto;
+    margin: 20px;
   }
 }
 /* line 21, ../_scss/page-specific/_project.scss */
-#project p,
-#project h1,
-#project .image {
-  float: left;
-  padding: 0px 1px 1px 0px;
-  width: 25%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+#project h1 {
+  font: 700 80px/80px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  margin: 0px 0px 100px 0px;
+  max-width: 700px;
 }
-/* line 27, ../_scss/page-specific/_project.scss */
-#project img {
-  max-width: 100%;
-  display: block;
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 21, ../_scss/page-specific/_project.scss */
+  #project h1 {
+    font: 700 50px/50px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+  }
 }
-/* line 31, ../_scss/page-specific/_project.scss */
-#project p {
-  font: 400 18px/24px Georgia, Serif;
-  padding: 20px;
-}
-/* line 35, ../_scss/page-specific/_project.scss */
-#project p + p {
-  text-indent: 0px;
+@media (min-width: 0px) and (max-width: 767px) {
+  /* line 21, ../_scss/page-specific/_project.scss */
+  #project h1 {
+    font: 700 30px/30px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+  }
 }
 /* line 38, ../_scss/page-specific/_project.scss */
-#project h1 {
-  font: 900 40px/40px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
-  font-style: italic;
-  transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  /* IE 9 */
-  -webkit-transform: rotate(-5deg);
-  /* Safari and Chrome */
-  letter-spacing: -1px;
+#project p {
+  margin: 0px 0px 20px 0px;
+  text-indent: 0px;
+  max-width: 700px;
+  font: 400 15px/20px 'Helvetica Neue', Sans-Serif;
+}
+/* line 43, ../_scss/page-specific/_project.scss */
+#project p a {
+  text-decoration: underline;
+  color: #111111;
 }
 /* line 46, ../_scss/page-specific/_project.scss */
-#project .image {
-  float: left;
-}
-/* line 48, ../_scss/page-specific/_project.scss */
-#project .image img {
-  width: 100%;
+#project p a:hover {
+  text-decoration: none;
 }
 /* line 51, ../_scss/page-specific/_project.scss */
-#project .image.col_2 {
-  width: 50%;
+#project img {
+  display: block;
+  max-width: 100%;
 }
-/* line 54, ../_scss/page-specific/_project.scss */
-#project .image.col_3 {
-  width: 75%;
-}
-/* line 57, ../_scss/page-specific/_project.scss */
-#project .image.col_4 {
-  width: 100%;
+/* line 55, ../_scss/page-specific/_project.scss */
+#project .image {
+  max-width: 700px;
+  margin: 0px 0px 20px 0px;
 }
