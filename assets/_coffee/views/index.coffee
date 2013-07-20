@@ -54,16 +54,13 @@ define [
 			"""
 
 		haveTumblrData: (data) ->
-			# console.log 'haveTumblrData', data
 			_.each @$('.tumblr'), (el, index) =>
 				$el = $(el)
 				post = data.response.posts[index]
-				# console.log post
 				$el.append @tumblrTemplate post
 				$el.find('.preloader').remove()
 
 		getSvpply: ->
-			console.log 'getSvpply'
 			$.ajax
 				type: 'GET'
 				dataType: 'jsonp'
@@ -83,10 +80,8 @@ define [
 		"""
 
 		haveSvpplyData: (data) ->
-			# console.log 'haveSvpplyData', data
 			_.each @$('.svpply'), (el, index) =>
 				$el = $(el)
 				post = data.response.products[index]
-				console.log post
 				$el.append @svpplyTemplate post
 				$el.find('.preloader').remove()
