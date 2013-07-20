@@ -53,6 +53,13 @@
 			a{
 				text-decoration: none;
 				color: #FFF;
+				.key{
+					@include inline-block;
+					width: 20px;
+					height: 20px;
+					@include border-radius(10px);
+					margin-right: 10px;
+				}
 				&:hover{
 					text-decoration: underline;
 				}

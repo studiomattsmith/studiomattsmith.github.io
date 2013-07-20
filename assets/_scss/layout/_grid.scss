@@ -190,6 +190,16 @@
 			}
 		}
 	}
+	#twitter-timeline{
+		background-color: #0084b4;
+		padding: 20px;
+		iframe{
+			width: 100% !important;
+		}
+		@include breakpoint(mobile){
+			display: none;
+		}
+	}
 	.filler{
 		position: relative;
 		@include breakpoint(mobile){
@@ -199,6 +209,78 @@
 			width: 50%;
 			@include box-sizing(border-box);
 			position: relative;
+			.guide{
+				img{
+					width: 100%;
+					display: block;
+				}
+			}
+			.preloader{
+				position: absolute;
+				left: 20px;
+				top: 20px;
+				.circle{
+					$border: 4px;
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					background: transparent;
+					border-top: $border solid transparent;
+					border-right: $border solid transparent;
+					border-bottom: $border solid rgba($black, .3);
+					border-left: $border solid rgba($black, .3);
+					$speed: .7s;
+					-webkit-animation: rotate $speed infinite linear;
+					-moz-animation: rotate $speed infinite linear;
+					-ms-animation: rotate $speed infinite linear;
+					-o-animation: rotate $speed infinite linear;
+					animation: rotate $speed infinite linear;
+				}
+			}
+			&.svpply{
+				overflow: hidden;
+				.image{
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					right: 0px;
+					bottom: 0px;
+					z-index: 1;
+					img{
+						max-width: 100%;
+					}
+				}
+				.info{
+					position: absolute;
+					z-index: 3;
+					left: 0px;
+					right: 0px;
+					bottom: 0px;
+					text-align: center;
+					padding: 170px 20px 20px 20px;
+					$colour_1: rgba(#70B76B, 0);
+					$colour_2: rgba(#70B76B, 1);
+					background-image: -ms-linear-gradient(top, $colour_1 0%, $colour_2 100%);
+					background-image: -moz-linear-gradient(top, $colour_1 0%, $colour_2 100%);
+					background-image: -o-linear-gradient(top, $colour_1 0%, $colour_2 100%);
+					background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $colour_1), color-stop(1, $colour_2));
+					background-image: -webkit-linear-gradient(top, $colour_1 0%, $colour_2 100%);
+					background-image: linear-gradient(to bottom, $colour_1 0%, $colour_2 100%);
+					h3{
+						font: 700 20px/20px $sans;
+						margin-bottom: 10px;
+						color: $black;
+						text-transform: uppercase;
+					}
+					h4{
+						font: 400 14px/20px 'Helvetica Neue', Sans-Serif;
+						margin-bottom: 0px;
+					}
+				}
+			}
+			&.twitter{
+				background-color: #0084b4;
+			}
 			&.tumblr{
 				position: absolute;
 				right: 0px;
@@ -206,10 +288,16 @@
 				width: 50%;
 				top: 0px;
 				background-color: rgb(44, 71, 98);
-				p{
-					margin: 20px;
-					font: 400 14px/20px 'Helvetica Neue', Sans-Serif;
-					color: rgba(0, 0, 0, .2);
+				.image{
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					right: 0px;
+					bottom: 0px;
+					img{
+						display: block;
+						width: 100%;
+					}
 				}
 			}
 			.instagram{

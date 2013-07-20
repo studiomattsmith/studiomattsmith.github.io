@@ -1,6 +1,6 @@
 ---
 title: services
 layout: category
-permalink: /people/
-category: people
+permalink: /services/
+category: services
 ---

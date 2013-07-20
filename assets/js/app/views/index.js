@@ -6,7 +6,7 @@
     return IndexView = Backbone.View.extend({
       initialize: function() {
         _.bindAll(this);
-        this.getInstagram();
+        this.getSvpply();
         return this.getTumblr();
       },
       getInstagram: function() {
@@ -44,6 +44,7 @@
           success: this.haveTumblrData
         });
       },
+      tumblrTemplate: _.template("<a href=\"<%= link_url %>\" target=\"_blank\">\n	<div class=\"image\">\n		<img src=\"<%= photos[0].original_size.url %>\" />\n	</div>\n</a>"),
       haveTumblrData: function(data) {
         var _this = this;
 
@@ -52,7 +53,31 @@
 
           $el = $(el);
           post = data.response.posts[index];
-          return console.log(post);
+          $el.append(_this.tumblrTemplate(post));
+          return $el.find('.preloader').remove();
+        });
+      },
+      getSvpply: function() {
+        console.log('getSvpply');
+        return $.ajax({
+          type: 'GET',
+          dataType: 'jsonp',
+          url: 'https://api.svpply.com/v1/users/jarred/wants/products.json?callback=?',
+          success: this.haveSvpplyData
+        });
+      },
+      svpplyTemplate: _.template("<a href=\"<%= page_url %>\" target=\"_blank\">\n	<div class=\"image\">\n		<img src=\"<%= image %>\" />\n	</div>\n	<div class=\"info\">\n		<h3><%= page_title %></h3>\n		<h4>from <em><%= store.name %></em></h4>\n	</div>\n</a>"),
+      haveSvpplyData: function(data) {
+        var _this = this;
+
+        return _.each(this.$('.svpply'), function(el, index) {
+          var $el, post;
+
+          $el = $(el);
+          post = data.response.products[index];
+          console.log(post);
+          $el.append(_this.svpplyTemplate(post));
+          return $el.find('.preloader').remove();
         });
       }
     });

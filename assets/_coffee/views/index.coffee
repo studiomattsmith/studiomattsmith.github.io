@@ -8,7 +8,8 @@ define [
 
 		initialize: ->
 			_.bindAll @
-			@getInstagram()
+			# @getInstagram()
+			@getSvpply()
 			@getTumblr()
 
 		getInstagram: ->
@@ -44,9 +45,48 @@ define [
 					offset: 0
 				success: @haveTumblrData
 
+		tumblrTemplate: _.template """
+			<a href="<%= link_url %>" target="_blank">
+				<div class="image">
+					<img src="<%= photos[0].original_size.url %>" />
+				</div>
+			</a>
+			"""
+
 		haveTumblrData: (data) ->
 			# console.log 'haveTumblrData', data
 			_.each @$('.tumblr'), (el, index) =>
 				$el = $(el)
 				post = data.response.posts[index]
+				# console.log post
+				$el.append @tumblrTemplate post
+				$el.find('.preloader').remove()
+
+		getSvpply: ->
+			console.log 'getSvpply'
+			$.ajax
+				type: 'GET'
+				dataType: 'jsonp'
+				url: 'https://api.svpply.com/v1/users/jarred/wants/products.json?callback=?'
+				success: @haveSvpplyData
+
+		svpplyTemplate: _.template """
+		<a href="<%= page_url %>" target="_blank">
+			<div class="image">
+				<img src="<%= image %>" />
+			</div>
+			<div class="info">
+				<h3><%= page_title %></h3>
+				<h4>from <em><%= store.name %></em></h4>
+			</div>
+		</a>
+		"""
+
+		haveSvpplyData: (data) ->
+			# console.log 'haveSvpplyData', data
+			_.each @$('.svpply'), (el, index) =>
+				$el = $(el)
+				post = data.response.products[index]
 				console.log post
+				$el.append @svpplyTemplate post
+				$el.find('.preloader').remove()
