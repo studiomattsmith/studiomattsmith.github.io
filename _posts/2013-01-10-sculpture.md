@@ -1,16 +1,16 @@
 ---
 layout: project
-intro: Sculpture Table.   
+intro: One off table for Mary Whalley  
 image: /assets/images/sculpture/st1.jpg
 title: Sculpture Table
-category: Project
+category: projects
 tags: [collaboration, furniture]
 orientation: portrait
 ---
 
 # Sculpture Table - Mary Whalley
 
-My partner, Mary, is an educator and artist, for one of her projects she need a portable sculpture table so we made this for her. More on the project here - [Mary Whalley](http://marywhalley.co.nz)
+My partner, Mary, is an educator and artist, for one of her projects she need a portable sculpture table so we made this. More on the project here - [Mary Whalley](http://marywhalley.co.nz)
 
 ![](/assets/images/sculpture/st1.jpg)
 
