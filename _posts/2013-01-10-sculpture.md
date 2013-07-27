@@ -4,7 +4,7 @@ intro: Sculpture Table.
 image: /assets/images/sculpture/st1.jpg
 title: Sculpture Table
 category: Project
-tags: [Collaboration]
+tags: [collaboration, furniture]
 orientation: portrait
 ---
 
