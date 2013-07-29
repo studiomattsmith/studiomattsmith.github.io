@@ -23,8 +23,8 @@
             </div>
             <div class="column">
                 {% for post in site.categories[page.category] %}
-                    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-                    {% if thecycle == 'even' %}
+                    {% capture thecycle_2 %}{% cycle 'odd', 'even', 'odd', 'even' %}{% endcapture %}
+                    {% if thecycle_2 == 'even' %}
                         {% include post-thumb.html %}
                     {% endif %}
                 {% endfor %}

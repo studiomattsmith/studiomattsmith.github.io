@@ -6,7 +6,6 @@
     return IndexView = Backbone.View.extend({
       initialize: function() {
         _.bindAll(this);
-        this.getSvpply();
         return this.getTumblr();
       },
       getInstagram: function() {
@@ -38,7 +37,7 @@
           type: 'GET',
           data: {
             api_key: "YgpsEXCrpCtKL9U7aNBzWeDp0sSbZw1AeZQSt5QgsXRLdb5o24",
-            limit: 20,
+            limit: 50,
             offset: 0
           },
           success: this.haveTumblrData
@@ -58,7 +57,6 @@
         });
       },
       getSvpply: function() {
-        console.log('getSvpply');
         return $.ajax({
           type: 'GET',
           dataType: 'jsonp',
@@ -75,7 +73,6 @@
 
           $el = $(el);
           post = data.response.products[index];
-          console.log(post);
           $el.append(_this.svpplyTemplate(post));
           return $el.find('.preloader').remove();
         });

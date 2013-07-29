@@ -13,3 +13,5 @@ A Jekyll powered blog. Articles are written in [Markdown](http://daringfireball.
 - COMMON
 - curated
 - article
+
+`coffee --watch --compile --output assets/js/app/ assets/_coffee/`
