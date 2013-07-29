@@ -10,7 +10,7 @@ orientation: landscape
 
 # The Philip Johnson Glass House
 
-An hour and a half north of New York City, in Connecticut, is Philip Johnson's Glass House, a 47 acre plot with 13 other modernist strcutures. 
+An hour and a half north of New York City, in Connecticut (a beautiful train ride from Grand Central Station), is Philip Johnson's Glass House - a 47 acre plot with 13 other modernist structures. I left behind a stormy New York City for a clear, dry Connecticut, standing in the Glass House you could hear the thunder from NYC. 
 
 ![](/assets/images/glass/GH1.jpg)
 
