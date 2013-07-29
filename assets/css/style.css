@@ -2032,7 +2032,14 @@ h6 {
   text-decoration: none;
   color: #111111;
 }
-/* line 48, ../_scss/layout/_grid.scss */
+/* line 52, ../_scss/layout/_grid.scss */
+#grid .post.travel h2,
+#grid .post.travel .intro p, #grid .post.publishing h2,
+#grid .post.publishing .intro p, #grid .post.projects h2,
+#grid .post.projects .intro p {
+  color: #FFF;
+}
+/* line 56, ../_scss/layout/_grid.scss */
 #grid .post .border {
   position: absolute;
   left: 0px;
@@ -2043,12 +2050,12 @@ h6 {
   z-index: 100;
   display: none;
 }
-/* line 58, ../_scss/layout/_grid.scss */
+/* line 66, ../_scss/layout/_grid.scss */
 #grid .post .image {
   position: relative;
   z-index: 2;
 }
-/* line 61, ../_scss/layout/_grid.scss */
+/* line 69, ../_scss/layout/_grid.scss */
 #grid .post .image img {
   display: block;
   width: 100%;
@@ -2056,12 +2063,11 @@ h6 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 67, ../_scss/layout/_grid.scss */
+/* line 75, ../_scss/layout/_grid.scss */
 #grid .post h2 {
   font: 700 30px/30px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
   text-transform: uppercase;
   letter-spacing: -1px;
-  color: #111111;
   text-align: center;
   padding: 20px;
   -webkit-box-sizing: border-box;
@@ -2069,20 +2075,20 @@ h6 {
   box-sizing: border-box;
 }
 @media (min-width: 0px) and (max-width: 767px) {
-  /* line 67, ../_scss/layout/_grid.scss */
+  /* line 75, ../_scss/layout/_grid.scss */
   #grid .post h2 {
     font: 700 20px/20px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
     letter-spacing: 0px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 67, ../_scss/layout/_grid.scss */
+  /* line 75, ../_scss/layout/_grid.scss */
   #grid .post h2 {
     font: 700 24px/24px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
     letter-spacing: 0px;
   }
 }
-/* line 85, ../_scss/layout/_grid.scss */
+/* line 92, ../_scss/layout/_grid.scss */
 #grid .post .intro p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2092,28 +2098,28 @@ h6 {
   font: 500 16px/21px 'Helvetica Neue', Sans-Serif;
 }
 @media (min-width: 0px) and (max-width: 767px) {
-  /* line 85, ../_scss/layout/_grid.scss */
+  /* line 92, ../_scss/layout/_grid.scss */
   #grid .post .intro p {
     font: 400 13px/18px 'Helvetica Neue', Sans-Serif;
     padding: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 85, ../_scss/layout/_grid.scss */
+  /* line 92, ../_scss/layout/_grid.scss */
   #grid .post .intro p {
     font: 400 14px/20px 'Helvetica Neue', Sans-Serif;
     padding: 20px;
   }
 }
-/* line 100, ../_scss/layout/_grid.scss */
+/* line 107, ../_scss/layout/_grid.scss */
 #grid .post.landscape {
   padding-bottom: 20px;
 }
-/* line 102, ../_scss/layout/_grid.scss */
+/* line 109, ../_scss/layout/_grid.scss */
 #grid .post.landscape img {
   width: 100%;
 }
-/* line 106, ../_scss/layout/_grid.scss */
+/* line 113, ../_scss/layout/_grid.scss */
 #grid .post.landscape .intro h2 {
   width: 50%;
   float: left;
@@ -2122,16 +2128,16 @@ h6 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 112, ../_scss/layout/_grid.scss */
+/* line 119, ../_scss/layout/_grid.scss */
 #grid .post.landscape .intro p {
   float: left;
   width: 50%;
 }
-/* line 119, ../_scss/layout/_grid.scss */
+/* line 126, ../_scss/layout/_grid.scss */
 #grid .post.portrait .image {
   width: 50%;
 }
-/* line 122, ../_scss/layout/_grid.scss */
+/* line 129, ../_scss/layout/_grid.scss */
 #grid .post.portrait .intro {
   position: absolute;
   right: 0px;
@@ -2140,16 +2146,16 @@ h6 {
   width: 50%;
   padding-bottom: 120px;
 }
-/* line 129, ../_scss/layout/_grid.scss */
+/* line 136, ../_scss/layout/_grid.scss */
 .left #grid .post.portrait .intro {
   left: 0px;
   right: auto;
 }
-/* line 133, ../_scss/layout/_grid.scss */
+/* line 140, ../_scss/layout/_grid.scss */
 #grid .post.portrait .intro h2 {
   margin-top: 40px;
 }
-/* line 136, ../_scss/layout/_grid.scss */
+/* line 143, ../_scss/layout/_grid.scss */
 #grid .post.portrait .intro p {
   padding: 0px 40px 20px 40px;
   position: absolute;
@@ -2158,11 +2164,11 @@ h6 {
   right: 0px;
 }
 @media (min-width: 0px) and (max-width: 767px) {
-  /* line 144, ../_scss/layout/_grid.scss */
+  /* line 151, ../_scss/layout/_grid.scss */
   #grid .post.portrait .intro h2 {
     margin-top: 20px;
   }
-  /* line 147, ../_scss/layout/_grid.scss */
+  /* line 154, ../_scss/layout/_grid.scss */
   #grid .post.portrait .intro p {
     padding: 20px;
     position: relative;
@@ -2172,11 +2178,11 @@ h6 {
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 156, ../_scss/layout/_grid.scss */
+  /* line 163, ../_scss/layout/_grid.scss */
   #grid .post.portrait .intro h2 {
     margin-top: 20px;
   }
-  /* line 159, ../_scss/layout/_grid.scss */
+  /* line 166, ../_scss/layout/_grid.scss */
   #grid .post.portrait .intro p {
     padding: 20px;
     position: relative;
@@ -2186,46 +2192,51 @@ h6 {
   }
 }
 @media (min-width: 768px) {
-  /* line 170, ../_scss/layout/_grid.scss */
+  /* line 177, ../_scss/layout/_grid.scss */
   #grid .post:hover {
     background-color: #FFF;
   }
+  /* line 180, ../_scss/layout/_grid.scss */
+  #grid .post:hover .intro p,
+  #grid .post:hover h2 {
+    color: #111111;
+  }
 }
-/* line 184, ../_scss/layout/_grid.scss */
+/* line 188, ../_scss/layout/_grid.scss */
 #grid .left .post.portrait .image {
   margin-left: 50%;
 }
-/* line 187, ../_scss/layout/_grid.scss */
+/* line 191, ../_scss/layout/_grid.scss */
 #grid .left .post.portrait .intro {
   right: auto;
   left: 0px;
 }
-/* line 193, ../_scss/layout/_grid.scss */
+/* line 197, ../_scss/layout/_grid.scss */
 #grid #twitter-timeline {
   background-color: #0084b4;
   padding: 20px;
 }
-/* line 196, ../_scss/layout/_grid.scss */
+/* line 200, ../_scss/layout/_grid.scss */
 #grid #twitter-timeline iframe {
   width: 100% !important;
 }
 @media (min-width: 0px) and (max-width: 767px) {
-  /* line 193, ../_scss/layout/_grid.scss */
+  /* line 197, ../_scss/layout/_grid.scss */
   #grid #twitter-timeline {
     display: none;
   }
 }
-/* line 203, ../_scss/layout/_grid.scss */
+/* line 207, ../_scss/layout/_grid.scss */
 #grid .filler {
   position: relative;
 }
 @media (min-width: 0px) and (max-width: 767px) {
-  /* line 203, ../_scss/layout/_grid.scss */
+  /* line 207, ../_scss/layout/_grid.scss */
   #grid .filler {
     display: none;
   }
 }
-/* line 208, ../_scss/layout/_grid.scss */
+/* line 212, ../_scss/layout/_grid.scss */
 #grid .filler .cell {
   width: 50%;
   -webkit-box-sizing: border-box;
@@ -2233,18 +2244,18 @@ h6 {
   box-sizing: border-box;
   position: relative;
 }
-/* line 213, ../_scss/layout/_grid.scss */
+/* line 217, ../_scss/layout/_grid.scss */
 #grid .filler .cell .guide img {
   width: 100%;
   display: block;
 }
-/* line 218, ../_scss/layout/_grid.scss */
+/* line 222, ../_scss/layout/_grid.scss */
 #grid .filler .cell .preloader {
   position: absolute;
   left: 20px;
   top: 20px;
 }
-/* line 222, ../_scss/layout/_grid.scss */
+/* line 226, ../_scss/layout/_grid.scss */
 #grid .filler .cell .preloader .circle {
   width: 10px;
   height: 10px;
@@ -2260,11 +2271,11 @@ h6 {
   -o-animation: rotate 0.7s infinite linear;
   animation: rotate 0.7s infinite linear;
 }
-/* line 240, ../_scss/layout/_grid.scss */
+/* line 244, ../_scss/layout/_grid.scss */
 #grid .filler .cell.svpply {
   overflow: hidden;
 }
-/* line 242, ../_scss/layout/_grid.scss */
+/* line 246, ../_scss/layout/_grid.scss */
 #grid .filler .cell.svpply .image {
   position: absolute;
   left: 0px;
@@ -2273,11 +2284,11 @@ h6 {
   bottom: 0px;
   z-index: 1;
 }
-/* line 249, ../_scss/layout/_grid.scss */
+/* line 253, ../_scss/layout/_grid.scss */
 #grid .filler .cell.svpply .image img {
   max-width: 100%;
 }
-/* line 253, ../_scss/layout/_grid.scss */
+/* line 257, ../_scss/layout/_grid.scss */
 #grid .filler .cell.svpply .info {
   position: absolute;
   z-index: 3;
@@ -2293,32 +2304,34 @@ h6 {
   background-image: -webkit-linear-gradient(top, rgba(112, 183, 107, 0) 0%, #70b76b 100%);
   background-image: linear-gradient(to bottom, rgba(112, 183, 107, 0) 0%, #70b76b 100%);
 }
-/* line 269, ../_scss/layout/_grid.scss */
+/* line 273, ../_scss/layout/_grid.scss */
 #grid .filler .cell.svpply .info h3 {
   font: 700 20px/20px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
   margin-bottom: 10px;
   color: #111111;
   text-transform: uppercase;
 }
-/* line 275, ../_scss/layout/_grid.scss */
+/* line 279, ../_scss/layout/_grid.scss */
 #grid .filler .cell.svpply .info h4 {
   font: 400 14px/20px 'Helvetica Neue', Sans-Serif;
   margin-bottom: 0px;
 }
-/* line 281, ../_scss/layout/_grid.scss */
+/* line 285, ../_scss/layout/_grid.scss */
 #grid .filler .cell.twitter {
   background-color: #0084b4;
 }
-/* line 284, ../_scss/layout/_grid.scss */
+/* line 288, ../_scss/layout/_grid.scss */
 #grid .filler .cell.tumblr {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  width: 50%;
-  top: 0px;
   background-color: #2c4762;
+  float: left;
+  position: relative;
 }
-/* line 291, ../_scss/layout/_grid.scss */
+/* line 293, ../_scss/layout/_grid.scss */
+#grid .filler .cell.tumblr .guide img {
+  display: block;
+  width: 100%;
+}
+/* line 298, ../_scss/layout/_grid.scss */
 #grid .filler .cell.tumblr .image {
   position: absolute;
   left: 0px;
@@ -2326,19 +2339,19 @@ h6 {
   right: 0px;
   bottom: 0px;
 }
-/* line 297, ../_scss/layout/_grid.scss */
+/* line 304, ../_scss/layout/_grid.scss */
 #grid .filler .cell.tumblr .image img {
-  display: block;
   width: 100%;
+  display: block;
 }
-/* line 303, ../_scss/layout/_grid.scss */
+/* line 310, ../_scss/layout/_grid.scss */
 #grid .filler .cell .instagram {
   position: relative;
   display: block;
   width: 50%;
   float: left;
 }
-/* line 308, ../_scss/layout/_grid.scss */
+/* line 315, ../_scss/layout/_grid.scss */
 #grid .filler .cell .instagram img {
   width: 100%;
   display: block;
@@ -2347,7 +2360,7 @@ h6 {
   box-sizing: border-box;
   padding: 0px;
 }
-/* line 315, ../_scss/layout/_grid.scss */
+/* line 322, ../_scss/layout/_grid.scss */
 #grid .filler .cell .instagram p {
   display: none;
   position: absolute;
@@ -2561,4 +2574,21 @@ h6 {
 #project .image {
   max-width: 700px;
   margin: 0px 0px 20px 0px;
+}
+/* line 59, ../_scss/page-specific/_project.scss */
+#project .video {
+  width: 100%;
+  height: 600px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 59, ../_scss/page-specific/_project.scss */
+  #project .video {
+    height: 400px;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  /* line 59, ../_scss/page-specific/_project.scss */
+  #project .video {
+    height: 240px;
+  }
 }

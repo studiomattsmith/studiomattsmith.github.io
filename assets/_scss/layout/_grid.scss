@@ -45,6 +45,14 @@
 		display: block;
 		text-decoration: none;
 		color: $black;
+		&.travel,
+		&.publishing,
+		&.projects{
+			h2, 
+			.intro p{
+				color: #FFF;
+			}
+		}
 		.border{
 			position: absolute;
 			left: 0px;
@@ -68,7 +76,6 @@
 			font: 700 30px/30px $sans;
 			text-transform: uppercase;
 			letter-spacing: -1px;
-			color: $black;
 			text-align: center;
 			padding: 20px;
 			@include box-sizing(border-box);
@@ -169,12 +176,9 @@
 		@include breakpoint(desktop){
 			&:hover{
 				background-color: #FFF;
-				.image{
-// 					@include opacity(.2);
-				}
-				p,
+				.intro p,
 				h2{
-// 					color: #FFF;
+					color: $black;
 				}
 			}
 		}
@@ -282,12 +286,15 @@
 				background-color: #0084b4;
 			}
 			&.tumblr{
-				position: absolute;
-				right: 0px;
-				bottom: 0px;
-				width: 50%;
-				top: 0px;
 				background-color: rgb(44, 71, 98);
+				float: left;
+				position: relative;
+				.guide{
+					img{
+						display: block;
+						width: 100%;
+					}
+				}
 				.image{
 					position: absolute;
 					left: 0px;
@@ -295,8 +302,8 @@
 					right: 0px;
 					bottom: 0px;
 					img{
-						display: block;
 						width: 100%;
+						display: block;
 					}
 				}
 			}
