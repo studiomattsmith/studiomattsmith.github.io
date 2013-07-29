@@ -14,6 +14,8 @@ We meet some interesting people during work and travel, these are some we met in
 
 ![](/assets/images/questions/Karie.jpg)
 
+**KARIE HIGGINS** <a href="http://www.bingbangnyc.com" target="_blank">BING BANG</a>, <a href="http://www.d-luxe.co.nz" target="_blank">D_LUXE</a>, <a href="http://www.kariehiggins.com" target="_blank">KARIE HIGGINS</a>
+
 ![](/assets/images/questions/KarieQs.jpg)
 
 ![](/assets/images/questions/Lee.jpg)

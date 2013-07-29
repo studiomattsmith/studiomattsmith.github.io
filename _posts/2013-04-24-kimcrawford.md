@@ -1,6 +1,6 @@
 ---
 layout: project
-intro: Wine ice bucket design for Kim Crawford Wines
+intro: Ice bucket design for Kim Crawford Wines
 image: /assets/images/kc/KimCrawford.jpg
 title: Kim Crawford
 category: services
@@ -10,8 +10,7 @@ orientation: landscape
 
 # Kim Crawford
 
-Wine bucket concept fot Kim Crawford Wines 
+Kim Crawford Wines wanted an elegant, original ice bucket they could supply to their premium customers. 
+This was the solution - a single piece injection moulded part in a polymer with the feel of old melamine homeware. 
 
 ![](/assets/images/kc/KimCrawford.jpg)
-
-More text
