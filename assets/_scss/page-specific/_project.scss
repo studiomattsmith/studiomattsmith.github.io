@@ -48,6 +48,15 @@
 			}
 		}
 	}
+	blockquote{
+		margin: 0px 0px 20px 0px;
+		text-indent: 0px;
+		max-width: 700px;
+		font-style: italic;
+		p{
+			font-style: italic;
+		}
+	}
 	img{
 		display: block;
 		max-width: 100%;
