@@ -10,7 +10,7 @@ orientation: portrait
 
 # Sculpture Table - Mary Whalley
 
-My partner, Mary, is an educator and artist, for one of her projects she need a portable sculpture table so we made this. More on the project here - <a href="http://www.marywhalley.co.nz" target="_blank">MARYWHALLEY.CO.NZ</a>
+Mary, is an educator and artist, for one of her projects she needed a portable sculpture table so we made this. More on the project here - <a href="http://www.marywhalley.co.nz" target="_blank">MARYWHALLEY.CO.NZ</a>
 
 ![](/assets/images/sculpture/st1.jpg)
 
