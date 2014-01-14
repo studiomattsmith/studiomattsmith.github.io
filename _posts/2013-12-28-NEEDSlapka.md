@@ -5,7 +5,7 @@ image: /assets/images/needs/lapka1.jpg
 title: NEEDS
 category: needs
 tags: []
-orientation: landscape
+orientation: portrait
 ---
 
 # LAPKA - Breath Alcohol Monitor.
