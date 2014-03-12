@@ -41,7 +41,7 @@ define [
 				type: 'GET'
 				data:
 					api_key: "YgpsEXCrpCtKL9U7aNBzWeDp0sSbZw1AeZQSt5QgsXRLdb5o24"
-					limit: 50
+					limit: 100
 					offset: 0
 				success: @haveTumblrData
 

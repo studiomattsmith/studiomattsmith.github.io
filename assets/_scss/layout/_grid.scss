@@ -44,12 +44,16 @@
 		position: relative;
 		display: block;
 		text-decoration: none;
-		color: $black;
 		&.travel,
-		&.publishing,
-		&.projects{
-			h2, 
-			.intro p{
+		&.goods,
+    &.services,
+    &.people,
+    &.needs,
+    &.projects,
+    &.publishing,
+    &.b-sides{
+			h2,
+			p{
 				color: #FFF;
 			}
 		}

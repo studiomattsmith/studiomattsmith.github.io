@@ -1,21 +1,24 @@
 .travel{
-	background-color: #C8C5BC;
+	background-color: #d0b4a6;
 }
 .goods{
-	background-color: #D74B00;
+	background-color: #921400;
 }
 .services{
-	background-color: #FFB308;
+	background-color: #921400;
 }
 .people{
-	background-color: #CA5A08;
+	background-color: #99001b;
 }
 .needs{
-	background-color: #81b06c;
+	background-color: #009985;
 }
 .projects{
-	background-color: #38765D;
+	background-color: #006e3b;
 }
 .publishing{
-	background-color: #24183F;
+	background-color: #420b17;
+}
+.b-sides{
+	background-color: #003029;
 }
