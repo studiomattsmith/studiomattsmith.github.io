@@ -4,6 +4,7 @@
     var IndexView;
 
     return IndexView = Backbone.View.extend({
+      tumblrPage: 0,
       initialize: function() {
         _.bindAll(this);
         return this.getTumblr();
@@ -30,7 +31,11 @@
           }
         });
       },
-      getTumblr: function() {
+      getTumblr: function(offset) {
+        if (offset == null) {
+          offset = 0;
+        }
+        this.currentTumblr = 0;
         return $.ajax({
           url: 'http://api.tumblr.com/v2/blog/commonthings.tumblr.com/posts',
           dataType: 'jsonp',
@@ -38,7 +43,7 @@
           data: {
             api_key: "YgpsEXCrpCtKL9U7aNBzWeDp0sSbZw1AeZQSt5QgsXRLdb5o24",
             limit: 50,
-            offset: 0
+            offset: Number(offset)
           },
           success: this.haveTumblrData
         });
@@ -47,14 +52,21 @@
       haveTumblrData: function(data) {
         var _this = this;
 
-        return _.each(this.$('.tumblr'), function(el, index) {
+        _.each(this.$('.tumblr-empty'), function(el, index) {
           var $el, post;
 
           $el = $(el);
           post = data.response.posts[index];
+          if (post === void 0) {
+            return;
+          }
           $el.append(_this.tumblrTemplate(post));
-          return $el.find('.preloader').remove();
+          $el.find('.preloader').remove();
+          return $el.removeClass('tumblr-empty');
         });
+        if (this.$('.tumblr-empty').length > 0) {
+          return this.getTumblr(this.currentTumblr + 1);
+        }
       },
       getSvpply: function() {
         return $.ajax({

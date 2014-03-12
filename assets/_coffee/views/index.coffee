@@ -6,6 +6,8 @@ define [
 
 	IndexView = Backbone.View.extend
 
+		tumblrPage: 0
+
 		initialize: ->
 			_.bindAll @
 			# @getInstagram()
@@ -34,15 +36,16 @@ define [
 				if gram?
 					$el.append @instagramTemplate gram
 
-		getTumblr: ->
+		getTumblr: (offset=0)->
+			@currentTumblr = 0
 			$.ajax
 				url: 'http://api.tumblr.com/v2/blog/commonthings.tumblr.com/posts'
 				dataType: 'jsonp'
 				type: 'GET'
 				data:
 					api_key: "YgpsEXCrpCtKL9U7aNBzWeDp0sSbZw1AeZQSt5QgsXRLdb5o24"
-					limit: 100
-					offset: 0
+					limit: 50
+					offset: Number(offset)
 				success: @haveTumblrData
 
 		tumblrTemplate: _.template """
@@ -54,11 +57,16 @@ define [
 			"""
 
 		haveTumblrData: (data) ->
-			_.each @$('.tumblr'), (el, index) =>
+			_.each @$('.tumblr-empty'), (el, index) =>
 				$el = $(el)
 				post = data.response.posts[index]
+				return if post is undefined
 				$el.append @tumblrTemplate post
 				$el.find('.preloader').remove()
+				$el.removeClass 'tumblr-empty'
+
+			if @$('.tumblr-empty').length > 0
+				@getTumblr @currentTumblr+1
 
 		getSvpply: ->
 			$.ajax
