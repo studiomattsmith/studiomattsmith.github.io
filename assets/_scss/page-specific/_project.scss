@@ -1,0 +1,78 @@
+#project{
+	position: absolute;
+	left: 20%;
+	top: 0px;
+	right: 0px;
+	margin: 46px 40px;
+	@include breakpoint(mobile){
+		position: relative;
+		left: auto;
+		top: auto;
+		right: auto;
+		margin: 20px;
+	}
+	@include breakpoint(tablet){
+		position: relative;
+		left: auto;
+		top: auto;
+		right: auto;
+		margin: 20px;
+	}
+	h1{
+		font: 700 80px/80px $sans;
+		text-transform: uppercase;
+		letter-spacing: -3px;
+		margin: 0px 0px 100px 0px;
+		max-width: 700px;
+		@include breakpoint(tablet){
+			font: 700 50px/50px $sans;
+			letter-spacing: -2px;
+			margin-bottom: 20px;
+		}
+		@include breakpoint(mobile){
+			font: 700 30px/30px $sans;
+			letter-spacing: -1px;
+			margin-bottom: 20px;
+		}
+	}
+	p{
+		margin: 0px 0px 20px 0px;
+		text-indent: 0px;
+		max-width: 700px;
+		font: 400 15px/20px 'Helvetica Neue', Sans-Serif;
+		a{
+			text-decoration: underline;
+			color: $black;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	blockquote{
+		margin: 0px 0px 20px 0px;
+		text-indent: 0px;
+		max-width: 700px;
+		font-style: italic;
+		p{
+			font-style: italic;
+		}
+	}
+	img{
+		display: block;
+		max-width: 100%;
+	}
+	.image{
+		max-width: 700px;
+		margin: 0px 0px 20px 0px;
+	}
+	.video{
+		width: 100%;
+		height: 600px;
+		@include breakpoint(tablet){
+			height: 400px;
+		}
+		@include breakpoint(mobile){
+			height: 240px;
+		}
+	}
+}
