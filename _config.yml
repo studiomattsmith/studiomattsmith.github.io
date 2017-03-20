@@ -1,5 +1,4 @@
 permalink: /post/:title
 safe: true
 lsi: false
-pygments: false
-highlighter: rouge
+pygments: true
