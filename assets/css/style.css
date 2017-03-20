@@ -2036,7 +2036,8 @@ h6 {
 #grid .post.object p, #grid .post.space h2,
 #grid .post.space p, #grid .post.stories h2,
 #grid .post.stories p, #grid .post.identity h2,
-#grid .post.identity p {
+#grid .post.identity p, #grid .post.about h2,
+#grid .post.about p {
   color: #FFF;
 }
 /* line 60, ../_scss/layout/_grid.scss */
