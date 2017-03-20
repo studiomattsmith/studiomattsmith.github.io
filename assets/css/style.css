@@ -63,7 +63,7 @@ audio:not([controls]) {
  */
 /* line 68, ../_scss/helpers/_normalize.scss */
 html {
-  background: #000;
+  background: #fff;
   /* 1 */
   color: #000;
   /* 2 */
