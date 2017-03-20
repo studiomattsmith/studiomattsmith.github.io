@@ -39,7 +39,7 @@ define [
 		getTumblr: (offset=0)->
 			@currentTumblr = 0
 			$.ajax
-				url: 'http://api.tumblr.com/v2/blog/commonthings.tumblr.com/posts'
+				url: ''
 				dataType: 'jsonp'
 				type: 'GET'
 				data:
