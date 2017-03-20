@@ -13,7 +13,7 @@
         $.ajax({
           type: 'GET',
           dataType: 'jsonp',
-          url: "https://api.instagram.com/v1/users/14250732/media/recent/?access_token=16304963.457f60c.d89e49ea943c44e29308004e99a9d8da&count=100",
+          url: "https://api.instagram.com",
           success: this.haveInstagramData
         });
       },

@@ -44,14 +44,11 @@
 		position: relative;
 		display: block;
 		text-decoration: none;
-		&.travel,
-		&.goods,
-    &.services,
-    &.people,
-    &.needs,
-    &.projects,
-    &.publishing,
-    &.b-sides{
+		&.object,
+		&.space,
+    &.stories,
+    &.identity,
+    &.about{
 			h2,
 			p{
 				color: #FFF;
