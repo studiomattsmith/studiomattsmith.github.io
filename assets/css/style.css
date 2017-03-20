@@ -2032,15 +2032,11 @@ h6 {
   text-decoration: none;
 }
 /* line 56, ../_scss/layout/_grid.scss */
-#grid .post.travel h2,
-#grid .post.travel p, #grid .post.goods h2,
-#grid .post.goods p, #grid .post.services h2,
-#grid .post.services p, #grid .post.people h2,
-#grid .post.people p, #grid .post.needs h2,
-#grid .post.needs p, #grid .post.projects h2,
-#grid .post.projects p, #grid .post.publishing h2,
-#grid .post.publishing p, #grid .post.b-sides h2,
-#grid .post.b-sides p {
+#grid .post.object h2,
+#grid .post.object p, #grid .post.space h2,
+#grid .post.space p, #grid .post.stories h2,
+#grid .post.stories p, #grid .post.identity h2,
+#grid .post.identity p {
   color: #FFF;
 }
 /* line 60, ../_scss/layout/_grid.scss */

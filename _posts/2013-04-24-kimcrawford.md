@@ -3,7 +3,7 @@ layout: project
 intro: Ice bucket design for Kim Crawford Wines
 image: /assets/images/kc/KimCrawford.jpg
 title: Kim Crawford
-category: services
+category: object
 tags: [fitout, branding, COMMON, collaboration]
 orientation: landscape
 ---

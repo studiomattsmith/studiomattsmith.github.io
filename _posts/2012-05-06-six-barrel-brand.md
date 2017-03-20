@@ -2,15 +2,15 @@
 layout: project
 intro: Branding for a new soda syrup company.
 image: /assets/images/6bsbrand/6bs1.jpg
-title: Six Barrel Soda Co. BRANDING
-category: services
+title: Six Barrel Soda Co. Identity
+category: identity
 tags: [branding, collaboration]
 orientation: portrait
 ---
 
-# Six Barrel Soda Co. BRANDING
+# Six Barrel Soda Co. Identity
 
-Branding for a new handmade soda syrup company, Six Barrel Soda Co. 
+Identity for a new handmade soda syrup company, Six Barrel Soda Co. 
 In collaboration with Caspian Ievers and Hugo Mathias. 
 
 <div class="image">
