@@ -1,24 +1,12 @@
-.travel{
-	background-color: #d0b4a6;
+.object{
+	background-color: #666666;
 }
-.goods{
-	background-color: #921400;
+.space{
+	background-color: #999999;
 }
-.services{
-	background-color: #921400;
+.stories{
+	background-color: #CCCCCC;
 }
-.people{
-	background-color: #99001b;
-}
-.needs{
-	background-color: #009985;
-}
-.projects{
-	background-color: #006e3b;
-}
-.publishing{
-	background-color: #420b17;
-}
-.b-sides{
-	background-color: #003029;
+.identity{
+	background-color: #EEEEEE;
 }
