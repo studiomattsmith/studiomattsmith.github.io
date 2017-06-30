@@ -1,15 +1,21 @@
 .object{
-	background-color: #97a07d;
+	background-color: #675c5;
 }
 .space{
-	background-color: #858e66;
+	background-color: #5f5350;
 }
 .stories{
-	background-color: #727c52;
+	background-color: #574845;
 }
 .identity{
-	background-color: #616b3f;
+	background-color: #4d3f3b;
+}
+.structure{
+	background-color: #443531;
+}
+.film{
+	background-color: #3a2b27;
 }
 .about{
-	background-color: #556031;
+	background-color: #2d201e;
 }
