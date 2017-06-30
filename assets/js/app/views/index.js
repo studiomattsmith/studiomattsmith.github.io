@@ -37,7 +37,7 @@
         }
         this.currentTumblr = 0;
         return $.ajax({
-          url: '',
+          url: 'http://api.tumblr.com/v2/blog/commonthings.tumblr.com/posts',
           dataType: 'jsonp',
           type: 'GET',
           data: {
