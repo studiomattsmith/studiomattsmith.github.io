@@ -13,7 +13,7 @@
         $.ajax({
           type: 'GET',
           dataType: 'jsonp',
-          url: "https://api.instagram.com",
+          url: "https://api.instagram.com/mattsmithco/",
           success: this.haveInstagramData
         });
       },
@@ -37,7 +37,7 @@
         }
         this.currentTumblr = 0;
         return $.ajax({
-          url: 'http://api.tumblr.com/v2/blog/commonthings.tumblr.com/posts',
+          url: 'http://api.tumblr.com',
           dataType: 'jsonp',
           type: 'GET',
           data: {
