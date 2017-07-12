@@ -15,27 +15,31 @@ define [
 			@getTumblr()
 
 		getInstagram: ->
-			$.ajax
-				type: 'GET'
-				dataType: 'jsonp'
-				url: "https://api.instagram.com/v1/users/5725120139/media/recent/?access_token=5725120139.4de2eb0.d716395e1cd7453da234aed6cce5b8c5""
-				success: @haveInstagramData
-			return
-
-		instagramTemplate: _.template """
-			<img src="<%= images.standard_resolution.url %>" />
-			<% if(caption){ %>
-				<p><%= caption.text %></p>
-			<% } %>
-			"""
-
-		haveInstagramData: (data) ->
-			_.each @$('.instagram'), (el, index) =>
-				$el = $(el)
-				gram = data.data[index]
-				if gram?
-					$el.append @instagramTemplate gram
-
+			
+		var token = 5725120139.4de2eb0.d716395e1cd7453da234aed6cce5b8c5,
+   		 userid = 5725120139,
+    		num_photos = 1; // how much photos do you want to get
+ 
+$.ajax({
+	url: 'https://api.instagram.com/v1/users/self/media/recent',
+	dataType: 'jsonp',
+	type: 'GET',
+	data: {access_token: token, count: num_photos},
+	success: function(data){
+ 		console.log(data);
+		for( x in data.data ){
+			$('ul').append('<li><img src="'+data.data[x].images.low_resolution.url+'"></li>'); // data.data[x].images.low_resolution.url - URL of image, 306х306
+			// data.data[x].images.thumbnail.url - URL of image 150х150
+			// data.data[x].images.standard_resolution.url - URL of image 612х612
+			// data.data[x].link - Instagram post URL 
+		}
+	},
+	error: function(data){
+		console.log(data); // send the error notifications to console
+	}
+});
+			
+			
 		getTumblr: (offset=0)->
 			@currentTumblr = 0
 			$.ajax
