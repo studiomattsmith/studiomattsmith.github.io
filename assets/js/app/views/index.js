@@ -10,29 +10,27 @@
         return this.getTumblr();
       },
       getInstagram: function() {
-      		var token = 5725120139.4de2eb0.d716395e1cd7453da234aed6cce5b8c5,
-   		 userid = 5725120139,
-    		num_photos = 1; // how much photos do you want to get
- 
-$.ajax({
-	url: 'https://api.instagram.com/v1/users/self/media/recent',
-	dataType: 'jsonp',
-	type: 'GET',
-	data: {access_token: token, count: num_photos},
-	success: function(data){
- 		console.log(data);
-		for( x in data.data ){
-			$('ul').append('<li><img src="'+data.data[x].images.low_resolution.url+'"></li>'); // data.data[x].images.low_resolution.url - URL of image, 306х306
-			// data.data[x].images.thumbnail.url - URL of image 150х150
-			// data.data[x].images.standard_resolution.url - URL of image 612х612
-			// data.data[x].link - Instagram post URL 
-		}
-	},
-	error: function(data){
-		console.log(data); // send the error notifications to console
-	}
-});
-        
+        $.ajax({
+          type: 'GET',
+          dataType: 'jsonp',
+          url: "https://api.instagram.com/v1/users/5725120139/media/recent/?access_token=5725120139.4de2eb0.d716395e1cd7453da234aed6cce5b8c5&count=100",
+          success: this.haveInstagramData
+        });
+      },
+      instagramTemplate: _.template("<img src=\"<%= images.standard_resolution.url %>\" />\n<% if(caption){ %>\n	<p><%= caption.text %></p>\n<% } %>"),
+      haveInstagramData: function(data) {
+        var _this = this;
+
+        return _.each(this.$('.instagram'), function(el, index) {
+          var $el, gram;
+
+          $el = $(el);
+          gram = data.data[index];
+          if (gram != null) {
+            return $el.append(_this.instagramTemplate(gram));
+          }
+        });
+      },
       getTumblr: function(offset) {
         if (offset == null) {
           offset = 0;
