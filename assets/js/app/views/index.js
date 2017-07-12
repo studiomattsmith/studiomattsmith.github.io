@@ -13,7 +13,7 @@
         $.ajax({
           type: 'GET',
           dataType: 'jsonp',
-          url: "https://api.instagram.com/mattsmithco/",
+          url: "https://api.instagram.com/v1/users/14250732/media/recent/?access_token=5725120139.4de2eb0.d716395e1cd7453da234aed6cce5b8c5&count=100",
           success: this.haveInstagramData
         });
       },
