@@ -2266,8 +2266,8 @@ h6 {
   background: transparent;
   border-top: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-bottom: 4px solid rgba(17, 17, 17, 0.3);
-  border-left: 4px solid rgba(17, 17, 17, 0.3);
+  border-bottom: 4px solid rgba(220, 220, 220, 0.3);
+  border-left: 4px solid rgba(220, 220, 220, 0.3);
   -webkit-animation: rotate 0.7s infinite linear;
   -moz-animation: rotate 0.7s infinite linear;
   -ms-animation: rotate 0.7s infinite linear;
@@ -2383,7 +2383,7 @@ h6 {
   width: 20%;
   z-index: 100;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #9b9b9b;
 }
 @media (min-width: 0px) and (max-width: 767px) {
   /* line 1, ../_scss/ui/_nav.scss */
@@ -2457,7 +2457,24 @@ h6 {
   position: relative;
   left: -10px;
   text-decoration: none;
-  color: #2b2b2b;
+  color: #FFF;
+}
+/* line 57, ../_scss/ui/_nav.scss */
+#nav ul li a .key {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  width: 14px;
+  height: 14px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
 }
 /* line 66, ../_scss/ui/_nav.scss */
 #nav ul li a:hover {
