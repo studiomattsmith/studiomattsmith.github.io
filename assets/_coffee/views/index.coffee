@@ -13,37 +13,37 @@ define [
 			# @getInstagram()
 			# @getSvpply()
 			@getTumblr()
-      
-			getInstagram: function() {
-        $.ajax({
-          type: 'GET',
-          dataType: 'jsonp',
-          url: "https://api.instagram.com/v1/users/5725120139/media/recent/?access_token=5725120139.4de2eb0.d716395e1cd7453da234aed6cce5b8c5&count=100",
-          success: this.haveInstagramData
-        });
-      },
-      instagramTemplate: _.template("<img src=\"<%= images.standard_resolution.url %>\" />\n<% if(caption){ %>\n	<p><%= caption.text %></p>\n<% } %>"),
-      haveInstagramData: function(data) {
-        var _this = this;
 
-        return _.each(this.$('.instagram'), function(el, index) {
-          var $el, gram;
+		getInstagram: ->
+			$.ajax
+				type: 'GET'
+				dataType: 'jsonp'
+				url: "https://api.instagram.com"
+				success: @haveInstagramData
+			return
 
-          $el = $(el);
-          gram = data.data[index];
-          if (gram != null) {
-            return $el.append(_this.instagramTemplate(gram));
-          }
-        });
-      },		
+		instagramTemplate: _.template """
+			<img src="<%= images.standard_resolution.url %>" />
+			<% if(caption){ %>
+				<p><%= caption.text %></p>
+			<% } %>
+			"""
+
+		haveInstagramData: (data) ->
+			_.each @$('.instagram'), (el, index) =>
+				$el = $(el)
+				gram = data.data[index]
+				if gram?
+					$el.append @instagramTemplate gram
+
 		getTumblr: (offset=0)->
 			@currentTumblr = 0
 			$.ajax
-				url: ''
+				url: 'http://api.tumblr.com/v2/blog/mattsmithco.tumblr.com/posts'
 				dataType: 'jsonp'
 				type: 'GET'
 				data:
-					api_key: "YgpsEXCrpCtKL9U7aNBzWeDp0sSbZw1AeZQSt5QgsXRLdb5o24"
+					api_key: "fEZ8u2HCH2XwZfahGwGYG7zVJPThyp8A7j0dwCdPq73rzZMZV7"
 					limit: 50
 					offset: Number(offset)
 				success: @haveTumblrData
