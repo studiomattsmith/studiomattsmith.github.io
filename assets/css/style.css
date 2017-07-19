@@ -2383,7 +2383,7 @@ h6 {
   width: 20%;
   z-index: 100;
   text-align: center;
-  background-color: #9b9b9b;
+  background-color: #ffffff;
 }
 @media (min-width: 0px) and (max-width: 767px) {
   /* line 1, ../_scss/ui/_nav.scss */
@@ -2457,7 +2457,7 @@ h6 {
   position: relative;
   left: -10px;
   text-decoration: none;
-  color: #b740c1;
+  color: #2b2b2b;
 }
 /* line 57, ../_scss/ui/_nav.scss */
 #nav ul li a .key {
