@@ -2383,7 +2383,7 @@ h6 {
   width: 20%;
   z-index: 100;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #9b9b9b;
 }
 @media (min-width: 0px) and (max-width: 767px) {
   /* line 1, ../_scss/ui/_nav.scss */
@@ -2435,7 +2435,7 @@ h6 {
 }
 /* line 40, ../_scss/ui/_nav.scss */
 #nav ul {
-  font: 700 30px/31px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
+  font: 700 24px/25px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
   text-transform: uppercase;
   margin: 0px;
   padding: 0px;
@@ -2457,7 +2457,7 @@ h6 {
   position: relative;
   left: -10px;
   text-decoration: none;
-  color: #2b2b2b;
+  color: #FFF;
 }
 /* line 57, ../_scss/ui/_nav.scss */
 #nav ul li a .key {
@@ -2466,10 +2466,10 @@ h6 {
   vertical-align: top;
   zoom: 1;
   *display: inline;
-  width: 20px;
-  height: 20px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  width: 14px;
+  height: 14px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
   margin-right: 10px;
