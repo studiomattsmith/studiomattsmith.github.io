@@ -37,7 +37,7 @@
         }
         this.currentTumblr = 0;
         return $.ajax({
-          url: 'http://api.tumblr.com',
+          url: 'http://api.tumblr.com/v2/blog/mattsmithco.tumblr.com/posts',
           dataType: 'jsonp',
           type: 'GET',
           data: {
