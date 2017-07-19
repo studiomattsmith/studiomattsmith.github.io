@@ -2383,7 +2383,7 @@ h6 {
   width: 20%;
   z-index: 100;
   text-align: center;
-  background-color: #9b9b9b;
+  background-color: #ffffff;
 }
 @media (min-width: 0px) and (max-width: 767px) {
   /* line 1, ../_scss/ui/_nav.scss */
@@ -2457,25 +2457,9 @@ h6 {
   position: relative;
   left: -10px;
   text-decoration: none;
-  color: #FFF;
+  color: #2b2b2b;
 }
-/* line 57, ../_scss/ui/_nav.scss */
-#nav ul li a .key {
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  *display: inline;
-  width: 14px;
-  height: 14px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-  margin-right: 10px;
-  position: relative;
-  top: 3px;
-}
+
 /* line 66, ../_scss/ui/_nav.scss */
 #nav ul li a:hover {
   text-decoration: underline;
