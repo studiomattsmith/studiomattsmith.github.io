@@ -2459,23 +2459,6 @@ h6 {
   text-decoration: none;
   color: #2b2b2b;
 }
-/* line 57, ../_scss/ui/_nav.scss */
-#nav ul li a .key {
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  *display: inline;
-  width: 10px;
-  height: 10px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-  margin-right: 10px;
-  position: relative;
-  top: 3px;
-}
 /* line 66, ../_scss/ui/_nav.scss */
 #nav ul li a:hover {
   text-decoration: underline;
