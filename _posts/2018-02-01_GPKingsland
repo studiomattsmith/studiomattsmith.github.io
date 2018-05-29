@@ -1,7 +1,7 @@
 ---
 layout: project
 intro: Design of a cellar door for Garage Project Brewery in Kingsland, Auckland. 
-image: /assets/images/gp/gpk3.jpg
+image: /assets/images/GPAro/gpk3.jpg
 title: Garage Project
 category: space
 tags: [fitout]
@@ -13,33 +13,16 @@ orientation: portrait
 Design of a cellar door for Garage Project Brewery in Kingsland, Auckland.
 
 <div class="image col_2">
-<img src="/assets/images/gp/GP_03.jpg"/>
+<img src="/assets/images/GPAro/gpk5.jpg"/>
 </div>
 <div class="image col_2">
-	<img src="/assets/images/gp/GP_01.jpg"/>
+	<img src="/assets/images/GPAro/gpk2.jp"/>
 </div>
 <div class="image">
-	<img src="/assets/images/gp/GP_02.jpg"/>
+	<img src="/assets/images/GPAro/gpk3.jpg"/>
 </div>
 <div class="image col_2">
-	<img src="/assets/images/gp/GP_04.jpg"/>
+	<img src="/assets/images/GPAro/gpk4.jp"/>
 </div>
-<div class="image">
-	<img src="/assets/images/gp/GP_05.jpg"/>
-</div>
-<div class="image">
-	<img src="/assets/images/gp/GP_06.jpg"/>
-</div>
-<div class="image">
-	<img src="/assets/images/gp/GP_07.jpg"/>
-</div>
-<div class="image col_2">
-	<img src="/assets/images/gp/GP_10.jpg"/>
-</div>
-<div class="image">
-	<img src="/assets/images/gp/GP_16.jpg"/>
-</div>
-<div class="image col_2">
-	<img src="/assets/images/gp/GP_20.jpg"/>
-</div>
-All photos by Michael Valli
+
+Photos by David Straight and Ken Downie
