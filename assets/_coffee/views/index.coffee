@@ -12,7 +12,7 @@ define [
 			_.bindAll @
 			# @getInstagram()
 			# @getSvpply()
-			@getTumblr()
+			# @getTumblr()
 
 		getInstagram: ->
 			$.ajax
