@@ -37,11 +37,11 @@
         }
         this.currentTumblr = 0;
         return $.ajax({
-          url: 'http://api.tumblr.com/v2/blog/mattsmithco.tumblr.com/posts',
+          url: '',
           dataType: 'jsonp',
           type: 'GET',
           data: {
-            api_key: "fEZ8u2HCH2XwZfahGwGYG7zVJPThyp8A7j0dwCdPq73rzZMZV7",
+            api_key: "",
             limit: 50,
             offset: Number(offset)
           },
