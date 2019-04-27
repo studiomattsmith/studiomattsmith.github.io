@@ -2201,7 +2201,7 @@ h6 {
   }
   /* line 184, ../_scss/layout/_grid.scss */
   #grid .post:hover .intro p,
-  #grid .post:hover h1 {
+  #grid .post:hover h2 {
     color: #fff;
   }
 }
@@ -2383,7 +2383,7 @@ h6 {
   width: 20%;
   z-index: 100;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #cb982b;
 }
 @media (min-width: 0px) and (max-width: 767px) {
   /* line 1, ../_scss/ui/_nav.scss */
