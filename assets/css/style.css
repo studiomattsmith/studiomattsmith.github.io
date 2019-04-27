@@ -2032,15 +2032,15 @@ h6 {
   text-decoration: none;
 }
 /* line 56, ../_scss/layout/_grid.scss */
-#grid .post.object h2,
-#grid .post.object p, #grid .post.space h2,
-#grid .post.space p, #grid .post.stories h2,
-#grid .post.stories p, #grid .post.identity h2,
-#grid .post.identity p, #grid .post.structure h2,
-#grid .post.structure p, #grid .post.film h2,
-#grid .post.film p, #grid .post.about h2,
+#grid .post.object h1,
+#grid .post.object p, #grid .post.space h1,
+#grid .post.space p, #grid .post.stories h1,
+#grid .post.stories p, #grid .post.identity h1,
+#grid .post.identity p, #grid .post.structure h1,
+#grid .post.structure p, #grid .post.film h1,
+#grid .post.film p, #grid .post.about h1,
 #grid .post.about p {
-  color: #fff;
+  color: #111111;
 }
 /* line 60, ../_scss/layout/_grid.scss */
 #grid .post .border {
