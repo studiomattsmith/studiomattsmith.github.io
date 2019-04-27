@@ -2121,7 +2121,7 @@ h6 {
 }
 /* line 113, ../_scss/layout/_grid.scss */
 #grid .post.landscape img {
-  width: 100%;
+  width: 101%;
 }
 /* line 117, ../_scss/layout/_grid.scss */
 #grid .post.landscape .intro h2 {
@@ -2139,7 +2139,7 @@ h6 {
 }
 /* line 130, ../_scss/layout/_grid.scss */
 #grid .post.portrait .image {
-  width: 53%;
+  width: 52%;
 }
 /* line 133, ../_scss/layout/_grid.scss */
 #grid .post.portrait .intro {
