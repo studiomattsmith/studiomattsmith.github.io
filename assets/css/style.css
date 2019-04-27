@@ -2201,8 +2201,8 @@ h6 {
   }
   /* line 184, ../_scss/layout/_grid.scss */
   #grid .post:hover .intro p,
-  #grid .post:hover h2 {
-    color: #111111;
+  #grid .post:hover h1 {
+    color: #fff;
   }
 }
 /* line 192, ../_scss/layout/_grid.scss */
