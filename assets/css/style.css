@@ -2436,8 +2436,8 @@ h6 {
 }
 /* line 40, ../_scss/ui/_nav.scss */
 #nav ul {
-  font: 700 24px/25px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
-  text-transform: uppercase;
+  font: 700 20px/20px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
+  text-transform: none;
   margin: 0px;
   padding: 0px;
   margin-top: 0px;
