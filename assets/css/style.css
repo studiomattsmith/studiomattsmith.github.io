@@ -2503,7 +2503,7 @@ h6 {
   left: 20%;
   top: 0px;
   right: 0px;
-  margin: 46px 40px;
+  margin: 26px 20px;
 }
 @media (min-width: 0px) and (max-width: 767px) {
   /* line 1, ../_scss/page-specific/_project.scss */
@@ -2529,7 +2529,7 @@ h6 {
 #project h1 {
   font: 700 36px/36px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
   text-transform: none;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   margin: 0px 0px 100px 0px;
   max-width: 700px;
 }
@@ -2537,7 +2537,7 @@ h6 {
   /* line 21, ../_scss/page-specific/_project.scss */
   #project h1 {
     font: 700 36px/36px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     margin-bottom: 20px;
   }
 }
@@ -2545,7 +2545,7 @@ h6 {
   /* line 21, ../_scss/page-specific/_project.scss */
   #project h1 {
     font: 700 30px/30px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     margin-bottom: 20px;
   }
 }
@@ -2579,11 +2579,11 @@ h6 {
 /* line 60, ../_scss/page-specific/_project.scss */
 #project img {
   display: block;
-  max-width: 100%;
+  max-width: 600px;
 }
 /* line 64, ../_scss/page-specific/_project.scss */
 #project .image {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0px 0px 20px 0px;
 }
 /* line 68, ../_scss/page-specific/_project.scss */
