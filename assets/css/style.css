@@ -2457,12 +2457,12 @@ h6 {
   position: relative;
   left: -10px;
   text-decoration: none;
-  color: #2b2b2b;
+  color: #ffffff;
 }
 
 /* line 66, ../_scss/ui/_nav.scss */
 #nav ul li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 /* line 70, ../_scss/ui/_nav.scss */
 #nav ul li.contact {
