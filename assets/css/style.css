@@ -2070,7 +2070,7 @@ h6 {
 #grid .post h2 {
   font: 700 30px/30px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
   text-transform: none;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   text-align: center;
   padding: 20px;
   -webkit-box-sizing: border-box;
@@ -2081,14 +2081,14 @@ h6 {
   /* line 79, ../_scss/layout/_grid.scss */
   #grid .post h2 {
     font: 700 20px/20px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   /* line 79, ../_scss/layout/_grid.scss */
   #grid .post h2 {
     font: 700 24px/24px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
   }
 }
 /* line 96, ../_scss/layout/_grid.scss */
@@ -2138,7 +2138,7 @@ h6 {
 }
 /* line 130, ../_scss/layout/_grid.scss */
 #grid .post.portrait .image {
-  width: 50%;
+  width: 60%;
 }
 /* line 133, ../_scss/layout/_grid.scss */
 #grid .post.portrait .intro {
