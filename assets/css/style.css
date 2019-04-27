@@ -2138,7 +2138,7 @@ h6 {
 }
 /* line 130, ../_scss/layout/_grid.scss */
 #grid .post.portrait .image {
-  width: 70%;
+  width: 50%;
 }
 /* line 133, ../_scss/layout/_grid.scss */
 #grid .post.portrait .intro {
@@ -2197,12 +2197,12 @@ h6 {
 @media (min-width: 768px) {
   /* line 181, ../_scss/layout/_grid.scss */
   #grid .post:hover {
-    background-color: #edebe8;
+    background-color: #e5e2df;
   }
   /* line 184, ../_scss/layout/_grid.scss */
   #grid .post:hover .intro p,
   #grid .post:hover h1 {
-    color: #111111;
+    color: #321612;
   }
 }
 /* line 192, ../_scss/layout/_grid.scss */
