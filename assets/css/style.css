@@ -2033,14 +2033,14 @@ h6 {
 }
 /* line 56, ../_scss/layout/_grid.scss */
 #grid .post.object h2,
-#grid .post.object p, #grid .post.space h1,
+#grid .post.object p, #grid .post.space h2,
 #grid .post.space p, #grid .post.stories h2,
 #grid .post.stories p, #grid .post.identity h2,
 #grid .post.identity p, #grid .post.structure h2,
 #grid .post.structure p, #grid .post.film h2,
 #grid .post.film p, #grid .post.about h2,
 #grid .post.about p {
-  color: #55643e;
+  color: #fff;
 }
 /* line 60, ../_scss/layout/_grid.scss */
 #grid .post .border {
@@ -2197,7 +2197,7 @@ h6 {
 @media (min-width: 768px) {
   /* line 181, ../_scss/layout/_grid.scss */
   #grid .post:hover {
-    background-color: #FFF;
+    background-color: #55643e;
   }
   /* line 184, ../_scss/layout/_grid.scss */
   #grid .post:hover .intro p,
