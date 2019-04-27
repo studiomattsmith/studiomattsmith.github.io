@@ -2197,7 +2197,7 @@ h6 {
 @media (min-width: 768px) {
   /* line 181, ../_scss/layout/_grid.scss */
   #grid .post:hover {
-    background-color: #55643e;
+    background-color: #e4a924;
   }
   /* line 184, ../_scss/layout/_grid.scss */
   #grid .post:hover .intro p,
