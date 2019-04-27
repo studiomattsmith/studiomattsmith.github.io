@@ -2033,7 +2033,7 @@ h6 {
 }
 /* line 56, ../_scss/layout/_grid.scss */
 #grid .post.object h2,
-#grid .post.object p, #grid .post.space h2,
+#grid .post.object p, #grid .post.space h1,
 #grid .post.space p, #grid .post.stories h2,
 #grid .post.stories p, #grid .post.identity h2,
 #grid .post.identity p, #grid .post.structure h2,
