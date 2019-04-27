@@ -63,7 +63,7 @@ audio:not([controls]) {
  */
 /* line 68, ../_scss/helpers/_normalize.scss */
 html {
-  background: #cb982b;
+  background: #edebe8;
   /* 1 */
   color: #000;
   /* 2 */
@@ -2197,12 +2197,12 @@ h6 {
 @media (min-width: 768px) {
   /* line 181, ../_scss/layout/_grid.scss */
   #grid .post:hover {
-    background-color: #e4a924;
+    background-color: #edebe8;
   }
   /* line 184, ../_scss/layout/_grid.scss */
   #grid .post:hover .intro p,
-  #grid .post:hover h2 {
-    color: #fff;
+  #grid .post:hover h1 {
+    color: #111111;
   }
 }
 /* line 192, ../_scss/layout/_grid.scss */
@@ -2325,7 +2325,7 @@ h6 {
 }
 /* line 292, ../_scss/layout/_grid.scss */
 #grid .filler .cell.tumblr {
-  background-color: #cb982b;
+  background-color: #edebe8;
   float: left;
   position: relative;
 }
@@ -2383,7 +2383,7 @@ h6 {
   width: 20%;
   z-index: 100;
   text-align: center;
-  background-color: #cb982b;
+  background-color: #edebe8;
 }
 @media (min-width: 0px) and (max-width: 767px) {
   /* line 1, ../_scss/ui/_nav.scss */
@@ -2457,7 +2457,7 @@ h6 {
   position: relative;
   left: -10px;
   text-decoration: none;
-  color: #ffffff;
+  color: #111111;
 }
 
 /* line 66, ../_scss/ui/_nav.scss */
