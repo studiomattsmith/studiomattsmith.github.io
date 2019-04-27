@@ -67,7 +67,7 @@ html {
   /* 1 */
   color: #000;
   /* 2 */
-  font-family: serif;
+  font-family: sans-serif;
   /* 3 */
   -ms-text-size-adjust: 100%;
   /* 4 */
@@ -2325,7 +2325,7 @@ h6 {
 }
 /* line 292, ../_scss/layout/_grid.scss */
 #grid .filler .cell.tumblr {
-  background-color: #3b3b3b;
+  background-color: #cb982b;
   float: left;
   position: relative;
 }
