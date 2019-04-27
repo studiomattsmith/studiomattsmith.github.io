@@ -2,7 +2,7 @@
 layout: project
 intro: 
 image: /assets/images/GPAro/gpk3.jpg
-title: Garage Project
+title: Garage Project Kingsland
 category: space
 tags: [fitout]
 orientation: portrait
