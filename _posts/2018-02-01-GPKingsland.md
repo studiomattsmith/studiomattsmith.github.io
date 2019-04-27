@@ -8,7 +8,7 @@ tags: [fitout]
 orientation: portrait
 ---
 
-# Garage Project
+# Garage Project Kingsland
 
 Design of a cellar door for Garage Project Brewery in Kingsland, Auckland.
 
