@@ -38,11 +38,12 @@
 		}
 	}
 	ul{
-		font: 700 30px/31px $sans;
-		text-transform: uppercase;
+		font: 400 14px/20px $sans;
+		text-transform: none;
 		margin: 0px;
 		padding: 0px;
 		margin-top: 0px;
+		color: #2b2c2b;
 		@include breakpoint(mobile){
 			padding-bottom: 20px;
 		}
