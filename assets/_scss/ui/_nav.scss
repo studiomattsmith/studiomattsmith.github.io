@@ -42,7 +42,7 @@
 		text-transform: none;
 		margin: 20px;
 		padding: 20px;
-		margin-top: 0px;
+		margin-top: 20px;
 		color: #2b2c2b;
 		@include breakpoint(mobile){
 			padding-bottom: 20px;
@@ -53,6 +53,7 @@
 			a{
 				position: relative;
 				left: -10px;
+				text-align: center;
 				text-decoration: none;
 				color: #FFF;
 				.key{
