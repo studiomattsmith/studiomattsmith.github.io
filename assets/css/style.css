@@ -2439,8 +2439,8 @@ h6 {
   font: 600 20px/20px "brandon-grotesque", "Helvetica Neue", Sans-Serif;
   text-transform: none;
   text-decoration: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 20px;
+  padding: 20px;
   margin-top: 0px;
 }
 @media (min-width: 0px) and (max-width: 767px) {
