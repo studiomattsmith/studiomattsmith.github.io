@@ -2378,7 +2378,7 @@ h6 {
 /* line 1, ../_scss/ui/_nav.scss */
 #nav {
   position: fixed;
-  left: 20px;
+  left: 0px;
   top: 0px;
   bottom: 0px;
   width: 20%;
