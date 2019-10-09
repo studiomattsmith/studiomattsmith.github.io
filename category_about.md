@@ -1,6 +1,6 @@
 ---
-title: about
+title: about & fees
 layout: category
 permalink: /about/
-category: about
+category: about & fees
 ---
