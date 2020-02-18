@@ -6,7 +6,7 @@ image: /assets/images/HH1.jpg
 title: Hyderabad Hotel
 category: space
 tags: [fitout, branding, COMMON, collaboration]
-orientation: portrait
+orientation: landscape
 ---
 
 # Hyderabad Hotel
