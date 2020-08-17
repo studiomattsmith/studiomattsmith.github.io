@@ -10,9 +10,9 @@ orientation: landscape
 
 # Mountfort Park Townhouses 
 
-Design of four 2 bedroom, 70sqm townhouses on a tight site in Addington, Christchurch, NZ.
-Brick, cork, engineered stone and solid American White Oak form a palette of materials that offer warm and inviting spaces while also being durable and easily maintained. 
-Construction due to start late 2020. 
+Design of four 2 bedroom, 70sqm townhouses on a tight site in Addington, Christchurch, NZ. <br>
+Brick, cork, engineered stone and solid American White Oak form a palette of materials that offer warm and inviting spaces while also being durable and easily maintained. <br>
+Construction due to start late 2020. <br>
 All external renders are by Petrie Architects.
 
 ![](/assets/images/MF2.jpg)
