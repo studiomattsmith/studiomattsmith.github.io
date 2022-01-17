@@ -1,7 +1,7 @@
 ---
 layout: project
 intro: 
-image: /assets/images/GPAro/gpk3.jpg
+image: /assets/images/GPAro/gp7.jpg
 title: Garage Project Kingsland
 category: space
 tags: [fitout]
