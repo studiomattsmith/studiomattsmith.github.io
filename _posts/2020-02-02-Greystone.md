@@ -1,10 +1,10 @@
 ---
 layout: project
 intro: 
-image: /assets/images/GS1.jpg
+image: /assets/images/GS6.jpg
 title: Greystone
 category: space
-tags: [fitout, branding, COMMON, collaboration]
+tags: [architecture]
 orientation: landscape
 ---
 
@@ -21,6 +21,8 @@ Design & build of a cellar door for Greystone Wines in North Canterbury.
 ![](/assets/images/GS4.jpg)
 
 ![](/assets/images/GS5.jpg)
+
+![](/assets/images/GS6.jpg)
 
 Photos by Nancy Zhou
 
