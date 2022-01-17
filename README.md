@@ -8,6 +8,6 @@ A Jekyll powered blog. Articles are written in [Markdown](http://daringfireball.
 - object
 - space
 - identity
-- stories
+
 
 `coffee --watch --compile --output assets/js/app/ assets/_coffee/`
