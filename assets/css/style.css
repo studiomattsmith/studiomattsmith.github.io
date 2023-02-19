@@ -49,6 +49,9 @@ audio:not([controls]) {
   display: none;
 }
 
+    $show-grid: true;
+    @import "grid";
+
 /* ==========================================================================
    Base
    ========================================================================== */
@@ -2117,11 +2120,11 @@ h6 {
 }
 /* line 111, ../_scss/layout/_grid.scss */
 #grid .post.landscape {
-  padding-bottom: 150px;
+  padding-bottom: 20px;
 }
 /* line 113, ../_scss/layout/_grid.scss */
 #grid .post.landscape img {
-  width: 201%;
+  width: 101%;
 }
 /* line 117, ../_scss/layout/_grid.scss */
 #grid .post.landscape .intro h2 {
