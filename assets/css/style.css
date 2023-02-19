@@ -2117,11 +2117,11 @@ h6 {
 }
 /* line 111, ../_scss/layout/_grid.scss */
 #grid .post.landscape {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 /* line 113, ../_scss/layout/_grid.scss */
 #grid .post.landscape img {
-  width: 101%;
+  width: 201%;
 }
 /* line 117, ../_scss/layout/_grid.scss */
 #grid .post.landscape .intro h2 {
