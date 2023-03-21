@@ -1,7 +1,7 @@
 ---
 layout: project
 intro: 
-image: /assets/images/T3.jpg
+image: /assets/images/T3.JPG
 title: Tonbridge Street Townhouses
 category: space
 tags: [fitout]
@@ -13,13 +13,13 @@ orientation: portrait
 Design of two 2 bedroom, 135sqm townhouses in Merivale, Christchurch, NZ.
 
 
-![](/assets/images/T1.jpg)
+![](/assets/images/T1.JPG)
 
-![](/assets/images/T2.jpg)
+![](/assets/images/T2.JPG)
 
-![](/assets/images/T3.jpg)
+![](/assets/images/T3.JPG)
 
-![](/assets/images/T4.jpg)
+![](/assets/images/T4.JPG)
 
 ![](/assets/images/T5.jpg)
 
