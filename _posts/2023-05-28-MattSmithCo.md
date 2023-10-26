@@ -17,4 +17,4 @@ Matt Smith is a multi-disciplinary creative. Originally trained in Industrial De
 
 +64 21 431 900
 
-<a href="https://www.instagram.com/mattsmithco/">Instagram</a>
+<a href="https://www.instagram.com/mattsmithco/" target="_blank">Instagram</a>
