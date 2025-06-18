@@ -2,7 +2,7 @@
 layout: landscape
 intro: 
 image: /assets/images/C9.png
-title: Tonbridge Street Townhouses
+title: Conference Street Townhouses
 category: space
 tags: [fitout]
 orientation: landscape
