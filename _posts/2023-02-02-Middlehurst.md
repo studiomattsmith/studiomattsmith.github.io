@@ -17,6 +17,8 @@ Design of a butchery, cafe and store for Middlehurst, Kaikoura, NZ.
 
 ![](/assets/images/MH_03.png)
 
+![](/assets/images/MH_10/jpg)
+
 ![](/assets/images//MH_08.png)
 
 ![](/assets/images/MH_02.png)
