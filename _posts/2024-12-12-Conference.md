@@ -1,5 +1,5 @@
 ---
-layout: landscape
+layout: project
 intro: 
 image: /assets/images/C9.png
 title: Conference Street Townhouses
