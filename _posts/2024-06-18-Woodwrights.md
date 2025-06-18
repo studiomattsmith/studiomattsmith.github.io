@@ -14,15 +14,15 @@ Furniture designs for Woodwrights.
 
 Lena Coffee Table, Side Table, Ottoman and Dining Table
 
-![](/assets/images/Lena1.png)
+![](/assets/images/Lena4.png)
 
 ![](/assets/images/Lena2.png)
-
-![](/assets/images/Lena4.png)
 
 ![](/assets/images/Lena5.png)
 
 ![](/assets/images/Lena6.png)
+
+![](/assets/images/Lena1.png)
 
 ![](/assets/images/LenaD1.png)
 
