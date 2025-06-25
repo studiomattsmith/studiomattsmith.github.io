@@ -36,6 +36,8 @@ Iris Dining Chair
 
 Wynn Coffee and Dining Table
 
+![](/assets/images/Wynn3.png)
+
 ![](/assets/images/Wynn2.png)
 
 ![](/assets/images/Wynn1.png)
