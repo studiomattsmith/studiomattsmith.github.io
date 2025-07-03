@@ -12,7 +12,7 @@ orientation: landscape
 
 Furniture designs for Woodwrights. 
 
-Lena Coffee Table, Side Table, Ottoman and Dining Table
+Lena Coffee Table, Side Table and Ottoman
 
 ![](/assets/images/Lena4.png)
 
@@ -23,6 +23,12 @@ Lena Coffee Table, Side Table, Ottoman and Dining Table
 ![](/assets/images/Lena6.png)
 
 ![](/assets/images/Lena1.png)
+
+Lena Dining Table
+
+![](/assets/images/LenaD3.png)
+
+![](/assets/images/LenaD2.png)
 
 ![](/assets/images/LenaD1.png)
 
