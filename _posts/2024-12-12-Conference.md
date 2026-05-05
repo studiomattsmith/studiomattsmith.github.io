@@ -29,6 +29,6 @@ Design of two 3 bedroom, 250sqm townhouses in Central Christchurch, NZ.
 
 ![](/assets/images/C8.jpg)
 
-![](/assets/images/C9.png)
+![](/assets/images/C9.jpg)
 
-![](/assets/images/C10.png)
+![](/assets/images/C10.jpg)
