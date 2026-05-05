@@ -10,7 +10,7 @@ orientation: portrait
 
 # Tonbridge Street Townhouses
 
-Design of two 2 bedroom, 135sqm townhouses in Merivale, Christchurch, NZ.
+Design of two 2 bedroom, 135sqm townhouses in Merivale, Christchurch, NZ.  [Limited Projects](https://www.limitedprojects.com/)
 
 
 ![](/assets/images/T1.JPG)
