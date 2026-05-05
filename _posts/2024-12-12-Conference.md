@@ -5,7 +5,7 @@ image: /assets/images/C0.jpg
 title: Conference Street Townhouses
 category: space
 tags: [fitout]
-orientation: landscape
+orientation: portrait
 ---
 
 # Conference Street Townhouses
