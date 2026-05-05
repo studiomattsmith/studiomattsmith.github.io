@@ -10,7 +10,7 @@ orientation: portrait
 
 # Conference Street Townhouses
 
-Design of two 3 bedroom, 250sqm townhouses in Central Christchurch, NZ.
+Design of two 3 bedroom, 250sqm townhouses in Central Christchurch, NZ.  [Limited Projects](https://www.limitedprojects.com/)
 
 
 ![](/assets/images/C1.jpg)
